@@ -39,7 +39,7 @@
             echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true, 'class'=>'country']);
             echo $this->Form->input('address');
             <div id="response">
-                <!--Response will be inserted here-->
+
 
             </div>
 
