@@ -38,8 +38,6 @@
                 <th scope="col"><?= $this->Paginator->sort('city_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('state_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('zip') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -60,8 +58,6 @@
                 <td><?= $owner->has('city') ? $this->Html->link($owner->city->name, ['controller' => 'Cities', 'action' => 'view', $owner->city->id]) : '' ?></td>
                 <td><?= $owner->has('state') ? $this->Html->link($owner->state->name, ['controller' => 'States', 'action' => 'view', $owner->state->id]) : '' ?></td>
                 <td><?= $this->Number->format($owner->zip) ?></td>
-                <td><?= h($owner->created) ?></td>
-                <td><?= h($owner->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $owner->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $owner->id]) ?>
