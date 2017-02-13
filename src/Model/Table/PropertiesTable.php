@@ -110,7 +110,7 @@ class PropertiesTable extends Table
 
         $validator
             ->requirePresence('photo_dir', 'create')
-            ->notEmpty('photo_dir');
+            ->allowEmpty('photo_dir');
 
         $validator
             ->allowEmpty('operating_account');
