@@ -28,7 +28,6 @@
                 <th scope="col"><?= $this->Paginator->sort('property_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('unit_number') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('status') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('size') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('country_id') ?></th>
@@ -50,8 +49,7 @@
                 <td><?= $this->Number->format($unit->id) ?></td>
                 <td><?= $unit->has('property') ? $this->Html->link($unit->property->name, ['controller' => 'Properties', 'action' => 'view', $unit->property->id]) : '' ?></td>
                 <td><?= h($unit->unit_number) ?></td>
-                <td><?= h($unit->photo) ?></td>
-                <td><?= h($unit->photo_dir) ?></td>
+                <td><?= $this->Html->image('/uploads/units/photo/'.$page->photo_dir.'/square_'.$page->photo) ?></td>
                 <td><?= h($unit->status) ?></td>
                 <td><?= h($unit->size) ?></td>
                 <td><?= $unit->has('country') ? $this->Html->link($unit->country->name, ['controller' => 'Countries', 'action' => 'view', $unit->country->id]) : '' ?></td>
