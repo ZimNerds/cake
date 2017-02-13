@@ -36,15 +36,15 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 </head>
 <body>
     <div class="nav-wrapper">
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
+    <nav class="top-bar expanded  large-3 medium-4 columns" data-topbar role="navigation">
+        <ul class="title-area">
             <li class="name">
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
         </ul>
         </nav>
-        <nav class ="nav-menu top-bar expanded" data-topbar role="navigation">
-             <ul class="nav left clearfix large-6 medium-4 columns">
+        <nav class ="nav-menu top-bar expanded large-6 medium-4 columns" data-topbar role="navigation">
+             <ul class="nav left clearfix ">
                     	<li class="active"><a href="#">Home</a></li>
                     	<li><a href="#about">About</a></li>
                     	<li><a href="#contact">Contact</a></li>
@@ -63,8 +63,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     </ul>
         </nav>
 
-         <nav class="top-bar expanded" data-topbar role="navigation">
-        <div class="top-bar-section large-3 medium-4 columns">
+         <nav class="top-bar expanded  large-3 medium-4 columns" data-topbar role="navigation">
+        <div class="top-bar-section">
 
             <ul class="right">
                 <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
