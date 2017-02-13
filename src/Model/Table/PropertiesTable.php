@@ -37,7 +37,6 @@ class PropertiesTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-
         $this->addBehavior('Proffer.Proffer', [
             'photo' => [    // The name of your upload field
                 'root' => WWW_ROOT . 'uploads', // Customise the root upload folder here, or omit to use the default
