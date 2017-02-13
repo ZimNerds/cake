@@ -42,6 +42,28 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
         </ul>
+        </nav>
+        <nav class ="nav-menu top-bar expanded" data-topbar role="navigation">
+             <ul class="nav left clearfix large-6 medium-4 columns">
+                    	<li class="active"><a href="#">Home</a></li>
+                    	<li><a href="#about">About</a></li>
+                    	<li><a href="#contact">Contact</a></li>
+                    	<li class="dropdown">
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    		<ul class="dropdown-menu sub-menu">
+                    			<li><a href="#">Action</a></li>
+                    			<li><a href="#">Another action</a></li>
+                    			<li><a href="#">Something else here</a></li>
+                    			<li class="divider"></li>
+                    			<li class="nav-header">Nav header</li>
+                    			<li><a href="#">Separated link</a></li>
+                    			<li><a href="#">One more separated link</a></li>
+                    		</ul>
+                    	</li>
+                    </ul>
+        </nav>
+
+         <nav class="top-bar expanded" data-topbar role="navigation">
         <div class="top-bar-section large-3 medium-4 columns">
 
             <ul class="right">
@@ -50,25 +72,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </ul>
         </div>
     </nav>
-    <nav class ="nav-menu top-bar expanded" data-topbar role="navigation">
-     <ul class="nav left clearfix large-6 medium-4 columns">
-            	<li class="active"><a href="#">Home</a></li>
-            	<li><a href="#about">About</a></li>
-            	<li><a href="#contact">Contact</a></li>
-            	<li class="dropdown">
-            		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            		<ul class="dropdown-menu sub-menu">
-            			<li><a href="#">Action</a></li>
-            			<li><a href="#">Another action</a></li>
-            			<li><a href="#">Something else here</a></li>
-            			<li class="divider"></li>
-            			<li class="nav-header">Nav header</li>
-            			<li><a href="#">Separated link</a></li>
-            			<li><a href="#">One more separated link</a></li>
-            		</ul>
-            	</li>
-            </ul>
-</nav>
 
 
     </div>
