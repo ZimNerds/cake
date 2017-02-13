@@ -30,6 +30,10 @@
     <h3><?= h($property->name) ?></h3>
     <table class="vertical-table">
         <tr>
+            <th scope="row"><?= __('Name') ?></th>
+            <td><?= h($property->name) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Type') ?></th>
             <td><?= $property->has('type') ? $this->Html->link($property->type->name, ['controller' => 'Types', 'action' => 'view', $property->type->id]) : '' ?></td>
         </tr>
@@ -78,17 +82,13 @@
             <td><?= $this->Number->format($property->property_reserve) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Address') ?></th>
-            <td><?= $this->Number->format($property->address) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Zip') ?></th>
             <td><?= $this->Number->format($property->zip) ?></td>
         </tr>
     </table>
     <div class="row">
-        <h4><?= __('Name') ?></h4>
-        <?= $this->Text->autoParagraph(h($property->name)); ?>
+        <h4><?= __('Address') ?></h4>
+        <?= $this->Text->autoParagraph(h($property->address)); ?>
     </div>
     <div class="related">
         <h4><?= __('Related Applications') ?></h4>

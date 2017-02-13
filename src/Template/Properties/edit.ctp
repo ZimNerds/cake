@@ -38,6 +38,7 @@
             echo $this->Form->input('type_id', ['options' => $types]);
             echo $this->Form->input('number_of_units');
             echo $this->Form->input('photo');
+            echo $this->Form->input('photo_dir');
             echo $this->Form->input('owner_id', ['options' => $owners, 'empty' => true]);
             echo $this->Form->input('operating_account');
             echo $this->Form->input('property_reserve');

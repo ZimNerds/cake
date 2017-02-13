@@ -29,6 +29,7 @@
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('type_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('number_of_units') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
@@ -38,7 +39,6 @@
                 <th scope="col"><?= $this->Paginator->sort('property_reserve') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('lease_term') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('country_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('address') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('city_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('state_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('zip') ?></th>
@@ -49,6 +49,7 @@
             <?php foreach ($properties as $property): ?>
             <tr>
                 <td><?= $this->Number->format($property->id) ?></td>
+                <td><?= h($property->name) ?></td>
                 <td><?= $property->has('type') ? $this->Html->link($property->type->name, ['controller' => 'Types', 'action' => 'view', $property->type->id]) : '' ?></td>
                 <td><?= $this->Number->format($property->number_of_units) ?></td>
                 <td><?= h($property->photo) ?></td>
@@ -58,7 +59,6 @@
                 <td><?= $this->Number->format($property->property_reserve) ?></td>
                 <td><?= h($property->lease_term) ?></td>
                 <td><?= $property->has('country') ? $this->Html->link($property->country->name, ['controller' => 'Countries', 'action' => 'view', $property->country->id]) : '' ?></td>
-                <td><?= $this->Number->format($property->address) ?></td>
                 <td><?= $property->has('city') ? $this->Html->link($property->city->name, ['controller' => 'Cities', 'action' => 'view', $property->city->id]) : '' ?></td>
                 <td><?= $property->has('state') ? $this->Html->link($property->state->name, ['controller' => 'States', 'action' => 'view', $property->state->id]) : '' ?></td>
                 <td><?= $this->Number->format($property->zip) ?></td>
