@@ -17,7 +17,7 @@ use Cake\ORM\Entity;
  * @property float $property_reserve
  * @property string $lease_term
  * @property int $country_id
- * @property int $address
+ * @property string $address
  * @property int $city_id
  * @property int $state_id
  * @property float $zip
