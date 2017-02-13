@@ -38,10 +38,10 @@
             echo $this->Form->input('lease_term');
             echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true, 'class'=>'country']);
             echo $this->Form->input('address');
-            <div id="response">
+            echo '<div id="response">
 
+            </div>';
 
-            </div>
 
 
             echo $this->Form->input('city_id', ['options' => $cities, 'empty' => true]);
