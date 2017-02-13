@@ -41,10 +41,23 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </li>
         </ul>
         <div class="top-bar-section">
-        <ul class="left">
-                        <li><a target="_blank" href="/">Home</a></li>
-                        <li><a target="_blank" href="/users">Users</a></li>
-                    </ul>
+        <ul class="nav left">
+        	<li class="active"><a href="#">Home</a></li>
+        	<li><a href="#about">About</a></li>
+        	<li><a href="#contact">Contact</a></li>
+        	<li class="dropdown">
+        		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        		<ul class="dropdown-menu">
+        			<li><a href="#">Action</a></li>
+        			<li><a href="#">Another action</a></li>
+        			<li><a href="#">Something else here</a></li>
+        			<li class="divider"></li>
+        			<li class="nav-header">Nav header</li>
+        			<li><a href="#">Separated link</a></li>
+        			<li><a href="#">One more separated link</a></li>
+        		</ul>
+        	</li>
+        </ul>
 
             <ul class="right">
                 <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
