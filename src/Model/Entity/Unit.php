@@ -9,7 +9,7 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property int $property_id
  * @property string $unit_number
- * @property string $photo
+ * @property $photo
  * @property string $photo_dir
  * @property string $status
  * @property string $size

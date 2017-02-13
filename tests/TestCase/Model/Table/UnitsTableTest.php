@@ -26,16 +26,16 @@ class UnitsTableTest extends TestCase
     public $fixtures = [
         'app.units',
         'app.properties',
+        'app.types',
+        'app.applications',
+        'app.tenants',
         'app.countries',
         'app.owners',
         'app.cities',
         'app.states',
         'app.employment',
-        'app.tenants',
-        'app.applications',
-        'app.types',
-        'app.references',
-        'app.rental_history'
+        'app.rental_history',
+        'app.references'
     ];
 
     /**
