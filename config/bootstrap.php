@@ -212,7 +212,7 @@ Type::build('datetime')
  * Plugin::load('Migrations'); //Loads a single plugin named Migrations
  *
  */
-Plugin::load('Proffer');
+
 /*
  * Only try to load DebugKit in development mode
  * Debug Kit should not be installed on a production system
@@ -220,3 +220,4 @@ Plugin::load('Proffer');
 if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
+Plugin::load('Proffer');
