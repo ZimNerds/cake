@@ -26,13 +26,13 @@
     </ul>
 </nav>
 <div class="units form large-9 medium-8 columns content">
-    <?= $this->Form->create($unit) ?>
+    <?= $this->Form->create($unit,['type' => 'file']) ?>
     <fieldset>
         <legend><?= __('Edit Unit') ?></legend>
         <?php
             echo $this->Form->input('property_id', ['options' => $properties, 'empty' => true]);
             echo $this->Form->input('unit_number');
-            echo $this->Form->input('photo');
+            echo $this->Form->input('photo',['type' => 'file']);
             echo $this->Form->input('photo_dir');
             echo $this->Form->input('status');
             echo $this->Form->input('size');
