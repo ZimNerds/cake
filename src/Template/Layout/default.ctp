@@ -28,6 +28,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css('style.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -41,7 +42,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
         </ul>
-        <div class="top-bar-section">
+        <div class="top-bar-section large-3 medium-4 columns">
 
             <ul class="right">
                 <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
@@ -50,7 +51,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </div>
     </nav>
     <nav class ="nav-menu top-bar expanded" data-topbar role="navigation">
-     <ul class="nav left clearfix">
+     <ul class="nav left clearfix large-6 medium-4 columns">
             	<li class="active"><a href="#">Home</a></li>
             	<li><a href="#about">About</a></li>
             	<li><a href="#contact">Contact</a></li>
