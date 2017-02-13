@@ -47,6 +47,11 @@ class PropertiesTable extends Table
                         'h' => 200, // Height
                         'jpeg_quality'  => 100
                     ],
+                    'wide' => [   // Define the prefix of your thumbnail
+                        'w' => 600, // Width
+                        'h' => 240, // Height
+                        'jpeg_quality'  => 100
+                    ],
                     'portrait' => [     // Define a second thumbnail
                         'w' => 100,
                         'h' => 300
