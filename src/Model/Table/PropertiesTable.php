@@ -39,7 +39,7 @@ class PropertiesTable extends Table
         parent::initialize($config);
         $this->addBehavior('Proffer.Proffer', [
             'photo' => [    // The name of your upload field
-                'root' => WWW_ROOT . 'img', // Customise the root upload folder here, or omit to use the default
+                'root' => WWW_ROOT . 'uploads', // Customise the root upload folder here, or omit to use the default
                 'dir' => 'photo_dir',   // The name of the field to store the folder
                 'thumbnailSizes' => [ // Declare your thumbnails
                     'square' => [   // Define the prefix of your thumbnail
