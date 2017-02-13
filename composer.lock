@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b312d138d07405605c9ad5e20ec8ccf0",
+    "content-hash": "7673ce95aec624fafda6ae89e9f8df1e",
     "packages": [
         {
             "name": "aura/installer-default",
@@ -346,16 +346,16 @@
         },
         {
             "name": "davidyell/proffer",
-            "version": "0.7.0",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidyell/CakePHP3-Proffer.git",
-                "reference": "96c438a52626a24d351c2447b58875afa87932cf"
+                "reference": "55237d53456051fdab23134838b2e4c5c3736c36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidyell/CakePHP3-Proffer/zipball/96c438a52626a24d351c2447b58875afa87932cf",
-                "reference": "96c438a52626a24d351c2447b58875afa87932cf",
+                "url": "https://api.github.com/repos/davidyell/CakePHP3-Proffer/zipball/55237d53456051fdab23134838b2e4c5c3736c36",
+                "reference": "55237d53456051fdab23134838b2e4c5c3736c36",
                 "shasum": ""
             },
             "require": {
@@ -366,12 +366,9 @@
             "require-dev": {
                 "cakephp/cakephp": "~3.0",
                 "cakephp/cakephp-codesniffer": "^2.0",
-                "phpunit/phpunit": "^5.4"
+                "phpunit/phpunit": "^5.5"
             },
             "type": "cakephp-plugin",
-            "extra": {
-                "installer-name": "Proffer"
-            },
             "autoload": {
                 "psr-4": {
                     "Proffer\\": "src"
@@ -397,7 +394,7 @@
                 "orm",
                 "upload"
             ],
-            "time": "2016-06-28T14:14:08+00:00"
+            "time": "2017-01-24T16:12:48+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
