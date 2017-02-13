@@ -33,7 +33,6 @@
                 <th scope="col"><?= $this->Paginator->sort('type_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('number_of_units') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('owner_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('operating_account') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('property_reserve') ?></th>
@@ -52,8 +51,7 @@
                 <td><?= h($property->name) ?></td>
                 <td><?= $property->has('type') ? $this->Html->link($property->type->name, ['controller' => 'Types', 'action' => 'view', $property->type->id]) : '' ?></td>
                 <td><?= $this->Number->format($property->number_of_units) ?></td>
-                <td><?= h($property->photo) ?></td>
-                <td><?= h($property->photo_dir) ?></td>
+                <td><?= $this->Html->image('/uploads/properties/photo/'.$property->photo_dir.'/square_'.$property->photo) ?></td>
                 <td><?= $property->has('owner') ? $this->Html->link($property->owner->name, ['controller' => 'Owners', 'action' => 'view', $property->owner->id]) : '' ?></td>
                 <td><?= h($property->operating_account) ?></td>
                 <td><?= $this->Number->format($property->property_reserve) ?></td>
