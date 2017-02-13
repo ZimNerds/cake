@@ -76,8 +76,7 @@ class UnitsTable extends Table
             ->allowEmpty('photo');
 
         $validator
-            ->requirePresence('photo_dir', 'create')
-            ->notEmpty('photo_dir');
+            ->allowEmpty('photo_dir');
 
         $validator
             ->requirePresence('status', 'create')
