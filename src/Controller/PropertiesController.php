@@ -133,7 +133,7 @@ class PropertiesController extends AppController
         foreach ($result as $results) {
             debug($results->name);
                 array_push($mystates,
-                    array('item'=>$results[0]));
+                    array('state'=>$results->name));
         }
         echo json_encode(array('mystates'=>$mystates));
 
