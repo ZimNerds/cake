@@ -132,6 +132,7 @@ class PropertiesController extends AppController
 
 
         echo $result;
+
     }
 
 }
