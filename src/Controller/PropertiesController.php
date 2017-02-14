@@ -139,7 +139,6 @@ class PropertiesController extends AppController
                     array('id'=>$results->id,'name'=>$results->name));
             }
 
-
             // Display city dropdown based on country name
             if($country !== ''){
                 echo "<label>State:</label>";
@@ -155,11 +154,8 @@ class PropertiesController extends AppController
 
 
     }
-
-
     function getcity()
     {
-
         if(isset($_POST["state"])){
             $state = $_POST["state"];
             // Define state and city array
@@ -173,9 +169,7 @@ class PropertiesController extends AppController
                 array_push($result1,
                     array('id'=>$results1->id,'name'=>$results1->name));
             }
-
-
-            // Display city dropdown based on country name
+// Display city dropdown based on country name
             if($state !== ''){
                 echo "<label>City:</label>";
                 echo "<select class='city'>";
@@ -185,10 +179,6 @@ class PropertiesController extends AppController
                 }
                 echo "</select>";
             }
-
         }
-
-
     }
-
 }
