@@ -177,6 +177,17 @@ class PropertiesController extends AppController
                 }
                 echo "</select>";
             }
+            else {
+                echo "<label>City:</label>";
+                echo "<select class='city' name='city_id' id='city-id'>";
+                foreach($result as $value){
+                    $cityvalue = $value['id'];
+                    echo "<option value='$cityvalue'>". $value['name'] . "</option>";
+                    debug($value->name);
+                }
+                echo "</select>";
+
+            }
         }
 
     }
