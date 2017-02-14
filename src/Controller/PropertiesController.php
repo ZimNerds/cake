@@ -123,18 +123,18 @@ class PropertiesController extends AppController
 
     function getstates()
     {
-        $country_id = 13;
+        $country_id = $_GET['countryid'];;
         $states = TableRegistry::get('States');
-        $result = $states
+        $query = $states
             ->find()
             ->where(['country_id =' => $country_id])
             ->order(['id' => 'ASC']);
-        $mystates = array();
-        foreach ($result as $results) {
-                array_push($mystates,
-                    array('state'=>$results->name));
+        $result = array();
+        foreach ($query as $results) {
+                array_push($result,
+                    array('id'=>$results->id,'name'=>$results->name));
         }
-        echo json_encode(array('mystates'=>$mystates));
+        echo json_encode(array('result'=>$result));
 
     }
 
