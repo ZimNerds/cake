@@ -38,9 +38,9 @@
             echo $this->Form->input('lease_term');
             echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true, 'class'=>'country']);
             echo $this->Form->input('address');
-            echo '<div id="response">
+            echo '<select id='states'>
 
-            </div>';
+                   </select>';
 
 
 

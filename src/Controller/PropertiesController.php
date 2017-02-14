@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Properties Controller
@@ -119,4 +120,19 @@ class PropertiesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    function processRequest()
+    {
+        $country_id = $_GET['country_id'];
+        $states = TableRegistry::get('States');
+        $query = $states
+            ->find()
+            ->select(['id', 'name'])
+            ->where(['country_id =' => $country_id])
+            ->order(['id' => 'ASC']);
+
+
+        echo json_encode(array('result' => $query));
+    }
+
 }
