@@ -145,8 +145,8 @@ class PropertiesController extends AppController
             if($country !== ''){
                 echo "<label>State:</label>";
                 echo "<select>";
-                foreach($result[$country] as $value){
-                    echo "<option>". $value . "</option>";
+                foreach($result as $value){
+                    echo "<option value='.$value->id.'>". $value->name . "</option>";
                 }
                 echo "</select>";
             }
