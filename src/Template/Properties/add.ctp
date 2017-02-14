@@ -38,12 +38,12 @@
             echo $this->Form->input('lease_term');
             echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true, 'class'=>'country']);
             echo $this->Form->input('address');
-            echo '<select id='states'>
+            ?> <select id='states'>
 
-                   </select>';
+                   </select>
 
 
-
+<?php
             echo $this->Form->input('city_id', ['options' => $cities, 'empty' => true]);
             echo $this->Form->input('state_id', ['options' => $states, 'empty' => true]);
             echo $this->Form->input('zip');
