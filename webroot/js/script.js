@@ -3,7 +3,7 @@ $(document).ready(function(){
         var selectedCountry = $(".country option:selected").val();
         $.ajax({
             type: "POST",
-            url: "/getstates",
+            url: " http://cake.zimnerds.com/properties/getstates",
             data: { country : selectedCountry }
         }).done(function(data){
             $("#response").html(data);
