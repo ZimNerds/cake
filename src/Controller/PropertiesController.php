@@ -131,11 +131,10 @@ class PropertiesController extends AppController
             ->order(['id' => 'ASC']);
         $mystates = array();
         foreach ($result as $results) {
-            debug($results->name);
                 array_push($mystates,
                     array('state'=>$results->name));
         }
-        return json_encode(array('mystates'=>$mystates));
+        echo json_encode(array('mystates'=>$mystates));
 
     }
 
