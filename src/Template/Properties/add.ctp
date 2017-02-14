@@ -38,9 +38,10 @@
             echo $this->Form->input('lease_term');
             echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true, 'class'=>'country']);
             echo $this->Form->input('address');
-            ?> <select id='states'>
+            ?> <div id="response">
+                   <!--Response will be inserted here-->
 
-                   </select>
+               </div>
 
 
 <?php

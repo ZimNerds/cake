@@ -121,21 +121,37 @@ class PropertiesController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
+
     function getstates()
     {
 
-        $country_id = $_GET['countryid'];
-        $states = TableRegistry::get('States');
-        $query = $states
-            ->find()
-            ->where(['country_id =' => $country_id])
-            ->order(['id' => 'ASC']);
-        $result = array();
-        foreach ($query as $results) {
+        if(isset($_POST["country"])){
+            $country = $_POST["country"];
+            // Define country and city array
+            $states = TableRegistry::get('States');
+            $query = $states
+                ->find()
+                ->where(['country_id =' => $country])
+                ->order(['id' => 'ASC']);
+            $result = array();
+            foreach ($query as $results) {
                 array_push($result,
                     array('id'=>$results->id,'name'=>$results->name));
+            }
+            echo json_encode(array('states'=>$result));
+
+
+            // Display city dropdown based on country name
+            if($country !== ''){
+                echo "<label>State:</label>";
+                echo "<select>";
+                foreach($result[$country] as $value){
+                    echo "<option>". $value . "</option>";
+                }
+                echo "</select>";
+            }
         }
-        echo json_encode(array('result'=>$result));
+
 
     }
 
