@@ -146,10 +146,13 @@ class PropertiesController extends AppController
                 echo "<label>State:</label>";
                 echo "<select>";
                 foreach($result as $value){
-                    echo "<option value='.$value->id.'>". $value->name . "</option>";
+                    echo "<option>". $value['name'] . "</option>";
                 }
                 echo "</select>";
+                echo json_encode(array('states'=>$result));
             }
+
+            echo json_encode(array('states'=>$value));
         }
 
 
