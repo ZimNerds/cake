@@ -49,3 +49,16 @@
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
 </div>
+<script>$("select.state").change(function(){
+            var selectedState = $(".state option:selected").val();
+            if (selectedState){
+                $.ajax({
+                    type: "POST",
+                    url: " http://cake.zimnerds.com/properties/getcity",
+                    data: { state : selectedState }
+                }).done(function(html){
+                    $("#city").html(html);
+
+                });
+            }
+        });</script>
