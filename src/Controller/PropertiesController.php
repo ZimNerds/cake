@@ -132,7 +132,7 @@ class PropertiesController extends AppController
             ->order(['id' => 'ASC']);
 
 
-        return $result;
+        echo $result;
     }
 
 }
