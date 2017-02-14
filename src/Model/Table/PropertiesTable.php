@@ -60,7 +60,6 @@ class PropertiesTable extends Table
                 'thumbnailMethod' => 'gd'   // Options are Imagick or Gd
             ]
         ]);
-
         $this->table('properties');
         $this->displayField('name');
         $this->primaryKey('id');
