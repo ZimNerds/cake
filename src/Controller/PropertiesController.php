@@ -143,7 +143,7 @@ class PropertiesController extends AppController
                 echo "<select class='state'>";
                 foreach($result as $value){
                     $statevalue = $value['id'];
-                    echo "<option value='.$statevalue.'>". $value['name'] . "</option>";
+                    echo "<option value='$statevalue'>". $value['name'] . "</option>";
                 }
                 echo "</select>";
             }
@@ -170,7 +170,7 @@ class PropertiesController extends AppController
                 echo "<select class='city'>";
                 foreach($result1 as $value1){
                     $cityvalue = $value1['id'];
-                    echo "<option value='.$cityvalue.'>". $value1['name'] . "</option>";
+                    echo "<option value='$cityvalue'>". $value1['name'] . "</option>";
                 }
                 echo "</select>";
             }
