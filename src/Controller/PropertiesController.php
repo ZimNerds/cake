@@ -148,10 +148,7 @@ class PropertiesController extends AppController
                 echo "</select>";
             }
         }
-    }
-    function getcity()
-    {
-        if(isset($_POST["state"])){
+        elseif(isset($_POST["state"])){
             $state = $_POST["state"];
             // Define state and city array
             $cities = TableRegistry::get('Cities');
