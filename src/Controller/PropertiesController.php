@@ -123,7 +123,7 @@ class PropertiesController extends AppController
 
     function processRequest()
     {
-        $country_id = $_GET['country_id'];
+        $country_id = $_GET['country-id'];
         $states = TableRegistry::get('States');
         $query = $states
             ->find()
