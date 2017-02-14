@@ -12,6 +12,7 @@ $(document).ready(function(){
     });
 
     $("select.state").change(function(){
+        alert( "Handler for .change() called." );
         var selectedState = $(".state option:selected").val();
         if (selectedState){
         $.ajax({
