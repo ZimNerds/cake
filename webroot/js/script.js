@@ -7,7 +7,6 @@ $(document).ready(function(){
             data: { country : selectedCountry }
         }).done(function(data){
             $("#state").html(data);
-            $('#city').html(data);
         });
     });
     $(".state").change(function(){
