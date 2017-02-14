@@ -7,7 +7,7 @@ $(document).ready(function(){
             data: { country : selectedCountry }
         }).done(function(data){
             $("#state").html(data);
-            $('#city').html('<option value="">Select state first</option>');
+            $('#city').html('<select class="city" name="city_id" id="city-id"><option value="">Select state first</option></select>');
         });
     });
     $("select.state").change(function(){
