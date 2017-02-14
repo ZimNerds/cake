@@ -43,7 +43,7 @@
             </div>
                <div id="city">
                </div>
-
+<?php
 echo $this->Form->input('city_id', ['options' => $cities, 'empty' => true]);
             echo $this->Form->input('zip');
         ?>
