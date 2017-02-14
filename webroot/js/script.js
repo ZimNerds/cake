@@ -1,13 +1,14 @@
-$('#country-id').change(function(){
+$('select.country').change(function(){
     $.getJSON(
-        '/properties/processRequest',
-        'country-id='+$('#country-id').val(),
+        '/properties/getstates',
+        'countryid='+$('select.country').val(),
         function(result){
             $('#states').empty();
             $.each(result.result, function(){
                 $('#states').append('<option>'+this['states']+'</option>');
-                console.log('+country-id');
+                console.log(countryid);
             });
         }
     );
+    console.log(countryid);
 });

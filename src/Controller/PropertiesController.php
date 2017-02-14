@@ -121,18 +121,18 @@ class PropertiesController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
-    function processRequest()
+    function getstates()
     {
-        $country_id = $_GET['country-id'];
+        $country_id = $_GET['countryid'];
         $states = TableRegistry::get('States');
-        $query = $states
+        $result = $states
             ->find()
             ->select(['id', 'name'])
             ->where(['country_id =' => $country_id])
             ->order(['id' => 'ASC']);
 
 
-        return json_encode(array('result' => $query));
+        return json_encode(array('result' => $result));
     }
 
 }
