@@ -140,7 +140,7 @@ class PropertiesController extends AppController
             // Display city dropdown based on country name
             if($country !== ''){
                 echo "<label>State:</label>";
-                echo "<select class='state'>";
+                echo "<select class='state' name='state_id' id='state-id'>";
                 foreach($result as $value){
                     $statevalue = $value['id'];
                     echo "<option value='$statevalue'>". $value['name'] . "</option>";
@@ -148,7 +148,11 @@ class PropertiesController extends AppController
                 echo "</select>";
             }
         }
-        elseif(isset($_POST["state"])){
+
+    }
+    function getcity()
+    {
+        if(isset($_POST["state"])){
             $state = $_POST["state"];
             // Define state and city array
             $cities = TableRegistry::get('Cities');
@@ -164,7 +168,7 @@ class PropertiesController extends AppController
 // Display city dropdown based on country name
             if($state !== ''){
                 echo "<label>City:</label>";
-                echo "<select class='city'>";
+                echo "<select class='city' name='city_id' id='city-id'>";
                 foreach($result1 as $value1){
                     $cityvalue = $value1['id'];
                     echo "<option value='$cityvalue'>". $value1['name'] . "</option>";

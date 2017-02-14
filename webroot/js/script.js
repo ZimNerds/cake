@@ -13,7 +13,7 @@ $(document).ready(function(){
         var selectedState = $(".state option:selected").val();
         $.ajax({
             type: "POST",
-            url: " http://cake.zimnerds.com/properties/getstates",
+            url: " http://cake.zimnerds.com/properties/getcity",
             data: { state : selectedState }
         }).done(function(data){
             $("#city").html(data);
