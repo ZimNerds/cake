@@ -161,7 +161,7 @@ class PropertiesController extends AppController
 
                 });
             }
-        });<script>";
+        });</script> ";
             }
         }
 
