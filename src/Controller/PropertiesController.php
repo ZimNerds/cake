@@ -123,6 +123,7 @@ class PropertiesController extends AppController
 
     function getstates()
     {
+
         $country_id = $_GET['countryid'];
         $states = TableRegistry::get('States');
         $query = $states

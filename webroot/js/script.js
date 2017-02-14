@@ -8,10 +8,10 @@ $('select.country').change(function(){
             $('#states').empty();
             $.each(result.result, function(){
                 $('#states').append('<option>'+this['states']+'</option>');
-                console.log($("#country-id").val());
+                console.log(countryid);
             });
         }
     );
-    console.log($("#country-id").val());
+    console.log(countryid);
 });
 });
