@@ -154,39 +154,27 @@ class PropertiesController extends AppController
     function getcity()
     {
         if(isset($_POST["state"])){
-            $state = 23;
+            $state = $_POST["state"];
             // Define state and city array
             $cities = TableRegistry::get('Cities');
-            $query = $cities
+            $city = $cities
                 ->find()
                 ->where(['state_id =' => $state])
                 ->order(['id' => 'ASC']);
-            $result = array();
-            foreach ($query as $results) {
-                array_push($result,
-                    array('id'=>$results->id,'name'=>$results->name));
+            $mycities = array();
+            foreach ($city as $mycity) {
+                array_push($mycities,
+                    array('id'=>$mycity->id,'name'=>$mycity->name));
             }
 // Display city dropdown based on country name
             if($state !== 'Select'){
                 echo "<label>City:</label>";
                 echo "<select class='city' name='city_id' id='city-id'>";
-                foreach($result as $value){
-                    $cityvalue = $value['id'];
-                    echo "<option value='$cityvalue'>". $value['name'] . "</option>";
-                    debug($value->name);
+                foreach($mycities as $myvalue){
+                    $cityvalue = $myvalue['id'];
+                    echo "<option value='$cityvalue'>". $myvalue['name'] . "</option>";
                 }
                 echo "</select>";
-            }
-            else {
-                echo "<label>City:</label>";
-                echo "<select class='city' name='city_id' id='city-id'>";
-                foreach($result as $value){
-                    $cityvalue = $value['id'];
-                    echo "<option value='$cityvalue'>". $value['name'] . "</option>";
-                    debug($value->name);
-                }
-                echo "</select>";
-
             }
         }
 
