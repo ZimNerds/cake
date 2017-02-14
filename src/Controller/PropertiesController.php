@@ -147,7 +147,21 @@ class PropertiesController extends AppController
                     echo "<option value='$statevalue'>". $value['name'] . "</option>";
                 }
                 echo "</select>";
-                   }
+                echo "
+<script>$(\"select.state\").change(function(){
+            var selectedState = $(\".state option:selected\").val();
+            if (selectedState){
+                $.ajax({
+                    type: \"POST\",
+                    url: \" http://cake.zimnerds.com/properties/getcity\",
+                    data: { state : selectedState }
+                }).done(function(html){
+                    $(\"#city\").html(html);
+
+                });
+            }
+        });</script> ";
+            }
         }
 
     }
