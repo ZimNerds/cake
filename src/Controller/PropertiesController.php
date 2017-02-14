@@ -143,7 +143,7 @@ class PropertiesController extends AppController
             // Display city dropdown based on country name
             if($country !== ''){
                 echo "<label>State:</label>";
-                echo "<select>";
+                echo "<select class='states'>";
                 foreach($result as $value){
                     echo "<option>". $value['name'] . "</option>";
                 }
