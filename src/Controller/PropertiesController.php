@@ -129,9 +129,13 @@ class PropertiesController extends AppController
             ->find()
             ->where(['country_id =' => $country_id])
             ->order(['id' => 'ASC']);
-
-
-       return $result;
+        $mystates = array();
+        foreach ($result as $results) {
+            debug($results->name);
+                array_push($mystates,
+                    array('item'=>$results[0]));
+        }
+        echo json_encode(array('mystates'=>$mystates));
 
     }
 
