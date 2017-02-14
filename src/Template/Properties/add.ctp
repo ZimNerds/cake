@@ -36,21 +36,15 @@
             echo $this->Form->input('operating_account');
             echo $this->Form->input('property_reserve');
             echo $this->Form->input('lease_term');
-            echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true, 'class'=>'country']);
+            echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true, 'class'=>'country','limit'=>500]);
             echo $this->Form->input('address');
-            ?> <div id="state">
-                   <!--Response will be inserted here-->
-
-               </div>
+            ?>
+            <div id="state">
+            </div>
                <div id="city">
-                                  <!--Response will be inserted here-->
+               </div>
 
-                              </div>
-
-
-<?php
-            echo $this->Form->input('city_id', ['options' => $cities, 'empty' => true]);
-            echo $this->Form->input('state_id', ['options' => $states, 'empty' => true]);
+echo $this->Form->input('city_id', ['options' => $cities, 'empty' => true]);
             echo $this->Form->input('zip');
         ?>
     </fieldset>

@@ -145,7 +145,8 @@ class PropertiesController extends AppController
                 echo "<label>State:</label>";
                 echo "<select class='state'>";
                 foreach($result as $value){
-                    echo "<option>". $value['name'] . "</option>";
+                    $statevalue = $value['id'];
+                    echo "<option value='.$statevalue.'>". $value['name'] . "</option>";
                 }
                 echo "</select>";
             }
@@ -167,10 +168,10 @@ class PropertiesController extends AppController
                 ->find()
                 ->where(['state_id =' => $state])
                 ->order(['id' => 'ASC']);
-            $result = array();
-            foreach ($query as $results) {
-                array_push($result,
-                    array('id'=>$results->id,'name'=>$results->name));
+            $result1 = array();
+            foreach ($query as $results1) {
+                array_push($result1,
+                    array('id'=>$results1->id,'name'=>$results1->name));
             }
 
 
@@ -178,8 +179,9 @@ class PropertiesController extends AppController
             if($state !== ''){
                 echo "<label>City:</label>";
                 echo "<select class='city'>";
-                foreach($result as $value){
-                    echo "<option>". $value['name'] . "</option>";
+                foreach($result1 as $value1){
+                    $cityvalue = $value1['id'];
+                    echo "<option value='.$cityvalue.'>". $value1['name'] . "</option>";
                 }
                 echo "</select>";
             }
