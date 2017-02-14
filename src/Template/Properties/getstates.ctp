@@ -45,7 +45,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php echo $mystates;?>
+
         </tbody>
     </table>
     <div class="paginator">
