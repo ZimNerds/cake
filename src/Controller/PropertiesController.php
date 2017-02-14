@@ -135,7 +135,7 @@ class PropertiesController extends AppController
                 array_push($mystates,
                     array('state'=>$results->name));
         }
-        echo json_encode(array('mystates'=>$mystates));
+        return json_encode(array('mystates'=>$mystates));
 
     }
 
