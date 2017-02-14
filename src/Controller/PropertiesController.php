@@ -127,7 +127,6 @@ class PropertiesController extends AppController
         $states = TableRegistry::get('States');
         $result = $states
             ->find()
-            ->select(['id', 'name'])
             ->where(['country_id =' => $country_id])
             ->order(['id' => 'ASC']);
 
