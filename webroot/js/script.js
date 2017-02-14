@@ -14,9 +14,9 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             url: " http://cake.zimnerds.com/properties/getcity",
-            data: { state : selectedState }
-        }).done(function(data){
-            $("#city").html(data);
+            stat: { state : selectedState }
+        }).done(function(stat){
+            $("#city").html(stat);
         });
     });
 });
