@@ -6,7 +6,17 @@ $(document).ready(function(){
             url: " http://cake.zimnerds.com/properties/getstates",
             data: { country : selectedCountry }
         }).done(function(data){
-            $("#response").html(data);
+            $("#state").html(data);
+        });
+    });
+    $("select.state").change(function(){
+        var selectedState = $(".state option:selected").val();
+        $.ajax({
+            type: "POST",
+            url: " http://cake.zimnerds.com/properties/getcity",
+            data: { state : selectedState }
+        }).done(function(data){
+            $("#city").html(data);
         });
     });
 });
