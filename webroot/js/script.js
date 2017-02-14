@@ -7,7 +7,7 @@ $('select.country').change(function(){
         function(result){
             $('#states').empty();
             $.each(result.result, function(){
-                $('#states').append('<option>'+this['states']+'</option>');
+                $('#states').append('<option value="'+this['id']+'">'+this['name']+'</option>');
                 console.log(countryid);
             });
         }
