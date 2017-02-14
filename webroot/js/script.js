@@ -11,18 +11,7 @@ $(document).ready(function(){
         });
     });
 
-    $("select.state").change(function(){
-        alert( "Handler for .change() called." );
-        var selectedState = $(".state option:selected").val();
-        if (selectedState){
-        $.ajax({
-            type: "POST",
-            url: " http://cake.zimnerds.com/properties/getcity",
-            data: { state : selectedState }
-        }).done(function(html){
-            $("#city").html(html);
-
-        });
-        }
-    });
 });
+
+
+
