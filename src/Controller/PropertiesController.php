@@ -175,7 +175,8 @@ class PropertiesController extends AppController
                     echo "<option value='$cityvalue'>". $value['name'] . "</option>";
                 }
                 echo "</select>";
-            }
+            }echo $result;
         }
+
     }
 }
