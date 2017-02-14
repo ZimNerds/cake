@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $("select.country").change(function(){
         var selectedCountry = $(".country option:selected").val();
         $.ajax({
@@ -9,7 +10,8 @@ $(document).ready(function(){
             $("#state").html(data);
         });
     });
-    $(".state").change(function(){
+
+    $("select.state").change(function(){
         var selectedState = $(".state option:selected").val();
         if (selectedState){
         $.ajax({
