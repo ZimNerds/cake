@@ -7,10 +7,10 @@ $(document).ready(function(){
             data: { country : selectedCountry }
         }).done(function(data){
             $("#state").html(data);
-            $('#city').html('<select class="city" name="city_id" id="city-id"><option value="">Select state first</option></select>');
+            $('#city').html(data);
         });
     });
-    $("select.state").change(function(){
+    $(".state").change(function(){
         var selectedState = $(".state option:selected").val();
         if (selectedState){
         $.ajax({

@@ -160,18 +160,18 @@ class PropertiesController extends AppController
                 ->find()
                 ->where(['state_id =' => $state])
                 ->order(['id' => 'ASC']);
-            $result1 = array();
-            foreach ($query as $results1) {
-                array_push($result1,
-                    array('id'=>$results1->id,'name'=>$results1->name));
+            $result = array();
+            foreach ($query as $results) {
+                array_push($result,
+                    array('id'=>$results->id,'name'=>$results->name));
             }
 // Display city dropdown based on country name
             if($state !== ''){
                 echo "<label>City:</label>";
                 echo "<select class='city' name='city_id' id='city-id'>";
-                foreach($result1 as $value1){
-                    $cityvalue = $value1['id'];
-                    echo "<option value='$cityvalue'>". $value1['name'] . "</option>";
+                foreach($result as $value){
+                    $cityvalue = $value['id'];
+                    echo "<option value='$cityvalue'>". $value['name'] . "</option>";
                 }
                 echo "</select>";
             }
