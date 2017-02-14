@@ -7,16 +7,20 @@ $(document).ready(function(){
             data: { country : selectedCountry }
         }).done(function(data){
             $("#state").html(data);
+            $('#city').html('<option value="">Select state first</option>');
         });
     });
     $("select.state").change(function(){
         var selectedState = $(".state option:selected").val();
+        if (selectedState){
         $.ajax({
             type: "POST",
             url: " http://cake.zimnerds.com/properties/getcity",
-            stat: { state : selectedState }
-        }).done(function(stat){
-            $("#city").html(stat);
+            data: { state : selectedState }
+        }).done(function(data){
+            $("#city").html(data);
+
         });
+        }
     });
 });
