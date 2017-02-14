@@ -141,7 +141,7 @@ class PropertiesController extends AppController
             if($country !== ''){
                 echo "<label>State:</label>";
                 echo "<select class='state' name='state_id' id='state-id'>";
-                echo "<option>Select State</option>";
+                echo "<option value='Select'>Select</option>";
                 foreach($result as $value){
                     $statevalue = $value['id'];
                     echo "<option value='$statevalue'>". $value['name'] . "</option>";
@@ -167,7 +167,7 @@ class PropertiesController extends AppController
                     array('id'=>$results->id,'name'=>$results->name));
             }
 // Display city dropdown based on country name
-            if($state !== 'Select State'){
+            if($state !== 'Select'){
                 echo "<label>City:</label>";
                 echo "<select class='city' name='city_id' id='city-id'>";
                 foreach($result as $value){
