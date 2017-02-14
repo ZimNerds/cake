@@ -5,9 +5,9 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             url: " http://cake.zimnerds.com/properties/getstates",
-            data: { country : selectedCountry }
-        }).done(function(data){
-            $("#state").html(data);
+            data:  'country=' +selectedCountry,
+        }).done(function(html){
+            $("#state").html(html);
         });
     });
 
@@ -18,8 +18,8 @@ $(document).ready(function(){
             type: "POST",
             url: " http://cake.zimnerds.com/properties/getcity",
             data: { state : selectedState }
-        }).done(function(data){
-            $("#city").html(data);
+        }).done(function(html){
+            $("#city").html(html);
 
         });
         }
