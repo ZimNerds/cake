@@ -45,7 +45,7 @@
             </tr>
         </thead>
         <tbody>
-            echo $result;
+            <?php echo $result;?>
         </tbody>
     </table>
     <div class="paginator">
