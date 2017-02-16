@@ -80,22 +80,10 @@ class AppController extends Controller
 
     function _menuInfo()
     {
-        $array = array();
         $mainmenu = NULL;
             $menu = TableRegistry::get('Menus');
         $mainmenu = $menu
-            ->find()
-            ->where(['parent_menu' => 0]);
-        foreach ($mainmenu as $mainmenus) {
-            array_push($array,$mainmenus);
-            $menuchild = TableRegistry::get('Menus');
-            $child = $menuchild
-                ->find()
-                ->where(['parent_menu' => $mainmenus->id]);
-            array_push($array,$child);
-
-            $mainmenu = $array;
-        }
+            ->find();
 
             return $mainmenu;
     }
