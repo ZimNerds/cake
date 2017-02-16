@@ -74,10 +74,5 @@ class MenusTable extends Table
         return $validator;
     }
 
-    public function buildRules(RulesChecker $rules)
-    {
-        $rules->add($rules->existsIn(['parent_menu'], 'Menus'));
 
-        return $rules;
-    }
 }
