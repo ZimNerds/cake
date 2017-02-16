@@ -1,4 +1,5 @@
 <?php
+use Cake\ORM\TableRegistry;
  $menus = TableRegistry::get('Menus');
 
     foreach($menus as $menu) :
