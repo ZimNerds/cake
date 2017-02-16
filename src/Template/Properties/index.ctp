@@ -45,7 +45,9 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($properties as $property): ?>
+            <?php foreach ($properties as $property):
+
+             echo $menu;?>
             <tr>
                 <td><?= $this->Number->format($property->id) ?></td>
                 <td><?= h($property->name) ?></td>
@@ -77,6 +79,7 @@
             <?= $this->Paginator->next(__('next') . ' >') ?>
             <?= $this->Paginator->last(__('last') . ' >>') ?>
         </ul>
+
         <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
     </div>
 </div>
