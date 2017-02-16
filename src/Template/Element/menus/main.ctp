@@ -1,8 +1,6 @@
-<?php if (!isset($menus) || empty($menus)) {
-        $menus = $this->requestAction('/menus/index');
-    }else
-    {
-    $menus = $this->Menus->find();}
+<?php
+ $menus = TableRegistry::get('Menus');
+
     foreach($menus as $menu) :
 
     $link=  $this->Url->build([

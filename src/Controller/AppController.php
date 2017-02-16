@@ -18,7 +18,6 @@ use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
 
-
 /**
  * Application Controller
  *
@@ -39,6 +38,9 @@ class AppController extends Controller
      *
      * @return void
      */
+
+
+
     public function initialize()
     {
         parent::initialize();
