@@ -59,7 +59,8 @@ class MenusController extends AppController
             $this->Flash->error(__('The menu could not be saved. Please, try again.'));
         }
         $menulist = $this->Menus->find('list', ['limit' => 600]);
-        $this->set(compact('menu','menulist'));
+        $menus=$this->Menus->find();
+        $this->set(compact('menu','menulist','menus'));
         $this->set('_serialize', ['menu','menulist']);
     }
 
