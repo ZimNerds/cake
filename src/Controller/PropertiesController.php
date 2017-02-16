@@ -62,11 +62,11 @@ class PropertiesController extends AppController
             }
             $this->Flash->error(__('The property could not be saved. Please, try again.'));
         }
-        $types = $this->Properties->Types->find('list', ['limit' => 200]);
-        $owners = $this->Properties->Owners->find('list', ['limit' => 200]);
-        $countries = $this->Properties->Countries->find('list', ['limit' => 200]);
-        $cities = $this->Properties->Cities->find('list', ['limit' => 200]);
-        $states = $this->Properties->States->find('list', ['limit' => 200]);
+        $types = $this->Properties->Types->find('list', ['limit' => 600]);
+        $owners = $this->Properties->Owners->find('list', ['limit' => 600]);
+        $countries = $this->Properties->Countries->find('list', ['limit' => 600]);
+        $cities = $this->Properties->Cities->find('list', ['limit' => 600]);
+        $states = $this->Properties->States->find('list', ['limit' => 600]);
         $this->set(compact('property', 'types', 'owners', 'countries', 'cities', 'states'));
         $this->set('_serialize', ['property']);
     }

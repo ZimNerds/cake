@@ -61,9 +61,9 @@ class OwnersController extends AppController
             }
             $this->Flash->error(__('The owner could not be saved. Please, try again.'));
         }
-        $countries = $this->Owners->Countries->find('list', ['limit' => 200]);
-        $cities = $this->Owners->Cities->find('list', ['limit' => 200]);
-        $states = $this->Owners->States->find('list', ['limit' => 200]);
+        $countries = $this->Owners->Countries->find('list', ['limit' => 600]);
+        $cities = $this->Owners->Cities->find('list', ['limit' => 600]);
+        $states = $this->Owners->States->find('list', ['limit' => 600]);
         $this->set(compact('owner', 'countries', 'cities', 'states'));
         $this->set('_serialize', ['owner']);
     }
