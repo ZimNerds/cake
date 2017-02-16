@@ -17,7 +17,12 @@
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('controller');
-            echo $this->Form->input('action');
+            echo $this->Form->select(
+                'action',
+                [index, add, view],
+                ['empty' => '(choose one)']
+            );
+
               echo $this->Form->input('parent_menu', ['options' => $menus, 'empty' => true]);
         ?>
     </fieldset>

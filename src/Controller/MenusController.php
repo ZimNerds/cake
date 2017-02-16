@@ -2,12 +2,12 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-
 /**
  * Menus Controller
  *
  * @property \App\Model\Table\MenusTable $Menus
  */
+
 class MenusController extends AppController
 {
 
