@@ -19,7 +19,7 @@
             echo $this->Form->input('controller');
             echo $this->Form->input('action');
             echo $this->Form->input('parent_menu', ['options' => $menus, 'empty' => true, 'label'=>'Parent Menu']);
-              echo $this->Form->input('country_id', ['options' => $menus, 'empty' => true, 'class'=>'country']);
+              echo $this->Form->input('parent_menu', ['options' => $menus, 'empty' => true, 'class'=>'country']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
