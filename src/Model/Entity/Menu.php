@@ -12,7 +12,9 @@ use Cake\ORM\Entity;
  * @property string $action
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
- * @property int $menu_id
+ * @property int $parent_menu
+ *
+ * @property \App\Model\Entity\Menu[] $menus
  */
 class Menu extends Entity
 {

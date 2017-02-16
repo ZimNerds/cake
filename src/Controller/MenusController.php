@@ -34,7 +34,7 @@ class MenusController extends AppController
     public function view($id = null)
     {
         $menu = $this->Menus->get($id, [
-            'contain' => []
+            'contain' => ['Menus']
         ]);
 
         $this->set('menu', $menu);

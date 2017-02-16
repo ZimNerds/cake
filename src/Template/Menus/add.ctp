@@ -7,6 +7,8 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Menus'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Menus'), ['controller' => 'Menus', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Menu'), ['controller' => 'Menus', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="menus form large-9 medium-8 columns content">
@@ -17,7 +19,7 @@
             echo $this->Form->input('name');
             echo $this->Form->input('controller');
             echo $this->Form->input('action');
-            echo $this->Form->input('menu_id',['options' => $menus, 'empty' => true,'label' => 'Parent Menu']);
+            echo $this->Form->input('parent_menu');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
