@@ -70,4 +70,24 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
     }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index', 'view', 'add','edit']);
+        $this->set('menu', $this->_menuInfo());
+
+    }
+
+
+
+    function _menuInfo()
+    {
+        $menu_info = NULL;
+            $menus = TableRegistry::get('Menus');
+            $menu = $menus
+                ->find();
+
+            return $menu;
+
+    }
 }
