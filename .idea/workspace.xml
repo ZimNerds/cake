@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b82fa95-ae44-45d6-bbbc-b2c3625cfcd5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/MenusController.php" afterPath="$PROJECT_DIR$/src/Controller/MenusController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Menus/add.ctp" afterPath="$PROJECT_DIR$/src/Template/Menus/add.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" />
     </list>
     <ignored path="cake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/Menus/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -89,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.ctp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.ctp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="45">
+              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -187,10 +186,10 @@
         <option value="$PROJECT_DIR$/src/Template/Properties/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Menus/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
-        <option value="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Table/MenusTable.php" />
         <option value="$PROJECT_DIR$/src/Controller/MenusController.php" />
         <option value="$PROJECT_DIR$/src/Template/Menus/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" />
       </list>
     </option>
   </component>
@@ -807,14 +806,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="13472000" />
-    </task>
-    <task id="LOCAL-00091" summary="ajax fix city 2">
-      <created>1487073099104</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1487073099105</updated>
+      <workItem from="1487223018511" duration="13535000" />
     </task>
     <task id="LOCAL-00092" summary="ajax fix city 2">
       <created>1487073211511</created>
@@ -1152,11 +1144,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487246212807</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="add parent menu option dropdown">
+      <created>1487246354822</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1487246354823</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49061000" />
+    <option name="totallyTimeSpent" value="49124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="0" width="1375" height="1014" extended-state="0" />
@@ -1620,14 +1619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MenusController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1640,6 +1631,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
           <folding />
         </state>
       </provider>
