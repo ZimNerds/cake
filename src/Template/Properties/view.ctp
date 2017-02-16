@@ -29,10 +29,10 @@
 <div class="properties view large-9 medium-8 columns content">
     <h3><?= h($property->name) ?></h3>
     <div class="row">
-    <div class="properties view large-3 medium-2 columns ">
+    <div class="properties view large-4 medium-6 columns ">
     <?= $this->Html->image('/uploads/properties/photo/'.$property->photo_dir.'/'.$property->photo) ?>
     </div>
-    <div class="properties view large-6 medium-6 columns ">
+    <div class="properties view large-8 medium-6 columns ">
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Name') ?></th>
