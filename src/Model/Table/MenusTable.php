@@ -36,8 +36,7 @@ class MenusTable extends Table
         $this->displayField('name');
         $this->primaryKey('id');
         $this->belongsTo('Menus', [
-            'foreignKey' => 'parent_menu',
-            'joinType' => 'INNER'
+            'foreignKey' => 'parent_menu'
         ]);
 
         $this->addBehavior('Timestamp');
