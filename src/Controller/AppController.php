@@ -96,6 +96,6 @@ class AppController extends Controller
 
         }
 
-            return $mainmenu;
+            return $array;
     }
 }
