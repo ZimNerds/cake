@@ -28,6 +28,11 @@
 </nav>
 <div class="properties view large-9 medium-8 columns content">
     <h3><?= h($property->name) ?></h3>
+    <div class="row">
+    <div class="properties view large-3 medium-2 columns ">
+    <?= $this->Html->image('/uploads/properties/photo/'.$property->photo_dir.'/square_'.$property->photo) ?>
+    </div>
+    <div class="properties view large-6 medium-6 columns ">
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Name') ?></th>
@@ -41,10 +46,7 @@
             <th scope="row"><?= __('Photo') ?></th>
             <td><?= h($property->photo) ?></td>
         </tr>
-        <tr>
-            <th scope="row"><?= __('Photo Dir') ?></th>
-            <td><?= h($property->photo_dir) ?></td>
-        </tr>
+
         <tr>
             <th scope="row"><?= __('Owner') ?></th>
             <td><?= $property->has('owner') ? $this->Html->link($property->owner->name, ['controller' => 'Owners', 'action' => 'view', $property->owner->id]) : '' ?></td>
@@ -86,6 +88,8 @@
             <td><?= $this->Number->format($property->zip) ?></td>
         </tr>
     </table>
+    </div>
+    </div>
     <div class="row">
         <h4><?= __('Address') ?></h4>
         <?= $this->Text->autoParagraph(h($property->address)); ?>
