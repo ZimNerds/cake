@@ -10,6 +10,6 @@ if($menus){
 
     ]);
    echo "<li class='menu-item'><a href='$link'>$menu->name </a></li>";
-   } else
-   echo "Bull";
+   } else{
+   echo "Bull";}
  endforeach; ?>

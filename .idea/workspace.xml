@@ -68,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OwnersTable.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OwnersTable.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Table/OwnersTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-15">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -88,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.ctp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.ctp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -806,14 +806,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="11656000" />
-    </task>
-    <task id="LOCAL-00084" summary="ajax fix 6">
-      <created>1487070982160</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1487070982160</updated>
+      <workItem from="1487223018511" duration="11717000" />
     </task>
     <task id="LOCAL-00085" summary="ajax fix 7">
       <created>1487071107185</created>
@@ -1151,11 +1144,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487244315993</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="add parent menu option dropdown">
+      <created>1487244507831</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1487244507831</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47245000" />
+    <option name="totallyTimeSpent" value="47306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="0" width="1375" height="1014" extended-state="0" />
@@ -1611,14 +1611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -1637,8 +1629,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Table/OwnersTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-15">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
