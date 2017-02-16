@@ -30,7 +30,7 @@
     <h3><?= h($property->name) ?></h3>
     <div class="row">
     <div class="properties view large-3 medium-2 columns ">
-    <?= $this->Html->image('/uploads/properties/photo/'.$property->photo_dir.'/square_'.$property->photo) ?>
+    <?= $this->Html->image('/uploads/properties/photo/'.$property->photo_dir/$property->photo) ?>
     </div>
     <div class="properties view large-6 medium-6 columns ">
     <table class="vertical-table">
