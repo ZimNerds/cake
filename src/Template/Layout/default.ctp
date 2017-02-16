@@ -44,7 +44,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
         <ul class="left">
-                       <?= $this->element('menus/main'); ?>
+                       <?= $this->element('menus/main') ?>
                     </ul>
             <ul class="right">
                 <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
