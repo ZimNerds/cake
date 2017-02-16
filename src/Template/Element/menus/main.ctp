@@ -1,6 +1,5 @@
-<?php if (!isset($menus) || empty($menus)) :
+<?php
         $menus = $this->requestAction('/menus/index');
-    endif;
     foreach($menus as $menu) :
 
     $link=  $this->Url->build([
