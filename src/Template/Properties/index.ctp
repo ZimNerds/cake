@@ -47,7 +47,6 @@
         <tbody>
             <?php foreach ($properties as $property):
 
-             echo $menus->name;?>
             <tr>
                 <td><?= $this->Number->format($property->id) ?></td>
                 <td><?= h($property->name) ?></td>
