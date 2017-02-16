@@ -19,7 +19,7 @@
             echo $this->Form->input('controller');
             echo $this->Form->select(
                 'action',
-                ['index'=>index, 'add'=>add, 'view'=>view],
+                ['index'=>'index', 'add'=>'add', 'view'=>'view'],
                 ['empty' => '(choose one)']
             );
 
