@@ -58,10 +58,9 @@ class MenusController extends AppController
             }
             $this->Flash->error(__('The menu could not be saved. Please, try again.'));
         }
-        $menulist = $this->Menus->find('list', ['limit' => 600]);
-        $menus=$this->Menus->find();
+        $menus = $this->Menus->find('list', ['limit' => 600]);
         $this->set(compact('menu','menulist','menus'));
-        $this->set('_serialize', ['menu','menulist']);
+        $this->set('_serialize', ['menu','menus']);
     }
 
     /**
@@ -85,9 +84,9 @@ class MenusController extends AppController
             }
             $this->Flash->error(__('The menu could not be saved. Please, try again.'));
         }
-        $menulist = $this->Menus->find('list', ['limit' => 600]);
-        $this->set(compact('menu','menulist'));
-        $this->set('_serialize', ['menu','menulist']);
+        $menus = $this->Menus->find('list', ['limit' => 600]);
+        $this->set(compact('menu','menus'));
+        $this->set('_serialize', ['menu','menus']);
     }
 
     /**
