@@ -35,6 +35,10 @@ class MenusTable extends Table
         $this->table('menus');
         $this->displayField('name');
         $this->primaryKey('id');
+        $this->belongsTo('Menus', [
+            'foreignKey' => 'parent_menu',
+            'joinType' => 'INNER'
+        ]);
 
         $this->addBehavior('Timestamp');
     }
@@ -68,5 +72,12 @@ class MenusTable extends Table
             ->allowEmpty('parent_menu');
 
         return $validator;
+    }
+
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['parent_menu'], 'Menus'));
+
+        return $rules;
     }
 }
