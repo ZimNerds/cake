@@ -80,10 +80,9 @@ class AppController extends Controller
 
     function _menuInfo()
     {
-        $menu_info = NULL;
+        $menus = NULL;
             $menus = TableRegistry::get('Menus');
-            $menu = $menus
-                ->find();
-            return $menu;
+
+            return $menus;
     }
 }
