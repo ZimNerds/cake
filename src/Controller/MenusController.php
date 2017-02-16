@@ -10,7 +10,6 @@ use App\Controller\AppController;
  */
 class MenusController extends AppController
 {
-
     /**
      * Index method
      *
