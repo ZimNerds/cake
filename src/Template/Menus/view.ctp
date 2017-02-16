@@ -32,6 +32,10 @@
             <td><?= $this->Number->format($menu->id) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Menu Id') ?></th>
+            <td><?= $this->Number->format($menu->menu_id) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($menu->created) ?></td>
         </tr>

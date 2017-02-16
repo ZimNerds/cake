@@ -17,6 +17,7 @@
             echo $this->Form->input('name');
             echo $this->Form->input('controller');
             echo $this->Form->input('action');
+            echo $this->Form->input('menu_id');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
