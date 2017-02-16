@@ -21,6 +21,7 @@ use Cake\Validation\Validator;
  */
 class MenusTable extends Table
 {
+    var $name = 'Menus';
 
     /**
      * Initialize method

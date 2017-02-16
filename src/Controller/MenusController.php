@@ -10,7 +10,7 @@ use App\Controller\AppController;
 
 class MenusController extends AppController
 {
-
+    var $name = 'Menus';
     /**
      * Index method
      *
