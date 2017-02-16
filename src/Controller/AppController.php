@@ -94,8 +94,9 @@ class AppController extends Controller
                 ->where(['parent_menu' => $mainmenus->id]);
             array_push($array,$child);
 
+            $mainmenu = $array;
         }
 
-            return $array;
+            return $mainmenu;
     }
 }
