@@ -91,8 +91,8 @@
       <file leaf-file-name="main.ctp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+            <state relative-caret-position="0">
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -806,14 +806,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="13535000" />
-    </task>
-    <task id="LOCAL-00092" summary="ajax fix city 2">
-      <created>1487073211511</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1487073211511</updated>
+      <workItem from="1487223018511" duration="13609000" />
     </task>
     <task id="LOCAL-00093" summary="ajax fix city 3">
       <created>1487073338395</created>
@@ -1151,11 +1144,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487246354823</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="add parent menu option dropdown">
+      <created>1487246415682</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1487246415682</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49124000" />
+    <option name="totallyTimeSpent" value="49198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="0" width="1375" height="1014" extended-state="0" />
@@ -1637,8 +1637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        <state relative-caret-position="0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
