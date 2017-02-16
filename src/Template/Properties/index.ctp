@@ -45,8 +45,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($properties as $property):
-
+            <?php foreach ($properties as $property):?>
             <tr>
                 <td><?= $this->Number->format($property->id) ?></td>
                 <td><?= h($property->name) ?></td>
