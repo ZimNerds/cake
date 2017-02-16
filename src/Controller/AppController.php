@@ -89,7 +89,7 @@ class AppController extends Controller
             $child = $menu
                 ->find()
                 ->where(['parent_menu' => $mainmenus->id]);
-            array_push($mainmenu,array($child));
+            array_push($mainmenu,$child);
 
         }
 
