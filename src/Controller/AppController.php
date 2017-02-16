@@ -84,6 +84,14 @@ class AppController extends Controller
             $menu = TableRegistry::get('Menus');
         $mainmenu = $menu
             ->find();
+        foreach ($mainmenu as $mainmenus) {
+
+            $child = $menu
+                ->find()
+                ->where(['parent_menu' => $mainmenus->id]);
+            array_push($mainmenu,array($child));
+
+        }
 
             return $mainmenu;
     }

@@ -5,7 +5,8 @@
         "action" => $menu->action
 
     ]);
-    if ($menu->parent_menu !== 0){
+    if ($menu->parent_menu == 0){
    echo "<li class='menu-item'><a href='$link'>$menu->name </a></li>";
    }
- endforeach; ?>
+ endforeach;
+ print_r ($mainmenu);?>
