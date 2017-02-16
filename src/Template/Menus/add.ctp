@@ -23,7 +23,7 @@
                 ['empty' => '(choose one)']
             );
 
-              echo $this->Form->input('parent_menu', ['options' => $menulist, 'empty' => true]);
+              echo $this->Form->input('parent_menu', ['options' => $menus, 'empty' => true]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b82fa95-ae44-45d6-bbbc-b2c3625cfcd5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/MenusController.php" afterPath="$PROJECT_DIR$/src/Controller/MenusController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Menus/add.ctp" afterPath="$PROJECT_DIR$/src/Template/Menus/add.ctp" />
     </list>
     <ignored path="cake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,14 +24,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PropertiesTable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Table/PropertiesTable.php">
+      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Properties/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="152" column="5" selection-start-line="143" selection-start-column="4" selection-end-line="152" selection-end-column="5" />
-              <folding>
-                <element signature="e#34#53#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="555">
+              <caret line="38" column="114" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="114" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenusController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MenusController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/MenusController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="990">
               <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
               <folding />
             </state>
@@ -84,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/src/Template/Menus/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+              <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -120,7 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.ctp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="edit.ctp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Template/Menus/edit.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
@@ -180,11 +178,11 @@
         <option value="$PROJECT_DIR$/src/Template/Properties/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Menus/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Table/MenusTable.php" />
-        <option value="$PROJECT_DIR$/src/Template/Menus/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Properties/index.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
         <option value="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/MenusController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Menus/add.ctp" />
       </list>
     </option>
   </component>
@@ -801,14 +799,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="16269000" />
-    </task>
-    <task id="LOCAL-00106" summary="property view photo">
-      <created>1487231149354</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1487231149354</updated>
+      <workItem from="1487223018511" duration="16365000" />
     </task>
     <task id="LOCAL-00107" summary="property view photo">
       <created>1487231279570</created>
@@ -1146,11 +1137,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487249083339</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="add parent menu option dropdown 1">
+      <created>1487249184623</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1487249184623</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51858000" />
+    <option name="totallyTimeSpent" value="51954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="0" width="1375" height="1014" extended-state="0" />
@@ -1531,14 +1529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Properties/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="38" column="114" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PropertiesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1362">
@@ -1561,14 +1551,6 @@
           <folding>
             <element signature="e#34#53#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Menus/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1595,14 +1577,6 @@
           <folding>
             <element signature="e#34#53#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Menus/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1634,8 +1608,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MenusController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="990">
           <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Properties/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="38" column="114" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Menus/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Menus/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
