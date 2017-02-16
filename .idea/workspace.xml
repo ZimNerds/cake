@@ -4,6 +4,7 @@
     <list default="true" id="2b82fa95-ae44-45d6-bbbc-b2c3625cfcd5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/AppController.php" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" />
     </list>
     <ignored path="cake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,8 +62,8 @@
       <file leaf-file-name="AppController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+            <state relative-caret-position="645">
+              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
                 <element signature="e#602#633#0#PHP" expanded="true" />
               </folding>
@@ -93,8 +94,8 @@
       <file leaf-file-name="main.ctp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state relative-caret-position="15">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -181,9 +182,9 @@
         <option value="$PROJECT_DIR$/src/Template/Menus/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Table/MenusTable.php" />
         <option value="$PROJECT_DIR$/src/Template/Menus/add.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/MenusController.php" />
         <option value="$PROJECT_DIR$/src/Template/Properties/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
       </list>
     </option>
@@ -801,14 +802,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="15376000" />
-    </task>
-    <task id="LOCAL-00100" summary="ajax fix city 4">
-      <created>1487075109110</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1487075109111</updated>
+      <workItem from="1487223018511" duration="15737000" />
     </task>
     <task id="LOCAL-00101" summary="ajax fix city 4">
       <created>1487075164169</created>
@@ -1146,11 +1140,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487247582852</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="add parent menu option dropdown">
+      <created>1487248285543</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1487248285544</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50965000" />
+    <option name="totallyTimeSpent" value="51326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="0" width="1375" height="1014" extended-state="0" />
@@ -1606,14 +1607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MenusController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1630,10 +1623,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/menus/main.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+        <state relative-caret-position="645">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="e#602#633#0#PHP" expanded="true" />
           </folding>
