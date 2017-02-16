@@ -73,12 +73,10 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'view', 'add','edit']);
+
         $this->set('menu', $this->_menuInfo());
 
     }
-
-
 
     function _menuInfo()
     {
@@ -86,8 +84,6 @@ class AppController extends Controller
             $menus = TableRegistry::get('Menus');
             $menu = $menus
                 ->find();
-
             return $menu;
-
     }
 }
