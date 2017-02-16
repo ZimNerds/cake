@@ -1,6 +1,7 @@
 <?php
 use Cake\ORM\TableRegistry;
  $menus = TableRegistry::get('Menus');
+
 if($menus){
     foreach($menus as $menu) :
 
@@ -10,6 +11,10 @@ if($menus){
 
     ]);
    echo "<li class='menu-item'><a href='$link'>$menu->name </a></li>";
-   } else{
-   echo "Bull";}
- endforeach; ?>
+
+ endforeach;
+  }
+    else
+    {
+    echo "Bull";
+    }?>
