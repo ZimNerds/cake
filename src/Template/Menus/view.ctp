@@ -32,7 +32,7 @@
             <td><?= $this->Number->format($menu->id) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Menu Id') ?></th>
+            <th scope="row"><?= __('Parent Menu') ?></th>
             <td><?= $this->Number->format($menu->menu_id) ?></td>
         </tr>
         <tr>

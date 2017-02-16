@@ -10,7 +10,6 @@ use Cake\Validation\Validator;
  * Menus Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Menus
- * @property \Cake\ORM\Association\HasMany $Menus
  *
  * @method \App\Model\Entity\Menu get($primaryKey, $options = [])
  * @method \App\Model\Entity\Menu newEntity($data = null, array $options = [])
