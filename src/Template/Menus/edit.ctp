@@ -23,7 +23,7 @@
             echo $this->Form->input('name');
             echo $this->Form->input('controller');
             echo $this->Form->input('action');
-            echo $this->Form->input('menu_id',['options' => $menus, 'empty' => true,'label' => 'Parent Menu']);
+            echo $this->Form->input('menu_id',['options' => $menus, 'empty' => true]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
