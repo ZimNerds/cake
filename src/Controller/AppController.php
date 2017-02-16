@@ -74,17 +74,17 @@ class AppController extends Controller
     public function beforeFilter(Event $event)
     {
 
-        $this->set('menus', $this->_menuInfo());
+        $this->set('mainmenu', $this->_menuInfo());
 
     }
 
     function _menuInfo()
     {
-        $menus = NULL;
+        $mainmenu = NULL;
             $menu = TableRegistry::get('Menus');
-        $menus = $menu
+        $mainmenu = $menu
             ->find();
 
-            return $menus;
+            return $mainmenu;
     }
 }

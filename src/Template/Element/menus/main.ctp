@@ -1,5 +1,5 @@
 <?php
-    foreach($menus as $menu) :
+    foreach($mainmenu as $menu) :
     $link=  $this->Url->build([
         "controller" => $menu->controller,
         "action" => $menu->action
