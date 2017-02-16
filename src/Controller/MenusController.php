@@ -60,7 +60,7 @@ class MenusController extends AppController
         }
         $menus = $this->Menus->find('list', ['limit' => 600]);
         $this->set(compact('menu','menus'));
-        $this->set('_serialize', ['menu']);
+        $this->set('_serialize', ['menu','menus']);
     }
 
     /**
@@ -86,7 +86,7 @@ class MenusController extends AppController
         }
         $menus = $this->Menus->find('list', ['limit' => 600]);
         $this->set(compact('menu','menus'));
-        $this->set('_serialize', ['menu']);
+        $this->set('_serialize', ['menu','menus']);
     }
 
     /**
