@@ -114,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/src/Template/Properties/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="369">
-              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -801,14 +801,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="14629000" />
-    </task>
-    <task id="LOCAL-00098" summary="ajax fix city 4">
-      <created>1487074847742</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1487074847743</updated>
+      <workItem from="1487223018511" duration="14695000" />
     </task>
     <task id="LOCAL-00099" summary="ajax fix city 4">
       <created>1487075028174</created>
@@ -1146,11 +1139,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487247439110</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="add parent menu option dropdown">
+      <created>1487247518612</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1487247518612</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50218000" />
+    <option name="totallyTimeSpent" value="50284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="0" width="1375" height="1014" extended-state="0" />
@@ -1635,7 +1635,7 @@
     <entry file="file://$PROJECT_DIR$/src/Template/Properties/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
           <folding />
         </state>
       </provider>
