@@ -34,7 +34,8 @@ padding:0;
 margin : 0 auto;}
 .child li{
      list-style: none;
-    width:100%;}
+    width:100%;
+    background-color:#2a6496;}
 .child li a{
 font-size: 1.1rem}
 #actions-sidebar>ul>li{width:100%;
