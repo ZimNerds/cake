@@ -35,9 +35,13 @@ margin : 0 auto;}
 .child li{
      list-style: none;
     width:100%;
-    background-color:#2a6496;}
+    background-color:#2a6496;
+    border-bottom: 1px solid #dedede;}
+.child li:hover{
+    background-color:#003f54;
+    border-bottom: 1px solid #fff;}
 .child li a,li.child_one a{
-font-size: 1.1rem}
+font-size: 1rem}
 #actions-sidebar>ul>li{width:100%;
     list-style: none;
 background-color:#308e97;
