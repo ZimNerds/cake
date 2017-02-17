@@ -10,6 +10,7 @@
 
   echo"<ul class='sub_menu child'>";
   foreach($submainmenu as $submenu) {
+  if($submenu->parent_menu != 0){
       $link=  $this->Url->build([
           "controller" => $submenu->controller,
           "action" => $submenu->action
@@ -19,6 +20,7 @@
       if ($submenu->parent_menu = $menu->id ){
          echo "<li class='sub_menu-item child'><a href='$link'>$submenu->name </a></li>";
 
+   }
    }
    }
  }
