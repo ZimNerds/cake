@@ -32,6 +32,8 @@ body{font-family: 'Josefin Sans', sans-serif;}
 #actions-sidebar ul{width:100%;
 padding:0;
 margin : 0 auto;}
+.child li{
+     list-style: none;}
 #actions-sidebar>ul>li{width:100%;
     list-style: none;
 background-color:#308e97;
