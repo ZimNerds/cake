@@ -7,7 +7,7 @@
     ]);
     if ($menu->parent_menu == 0){
    echo "<li class='menu-item'><a href='$link'>$menu->name </a></li>";
-
+ }
   echo"<ul>";
   foreach($mainmenu as $submenu) :
       $link=  $this->Url->build([
@@ -20,7 +20,7 @@
          echo "<li class='menu-item'><a href='$link'>$submenu->name </a></li>";
 
    }
-   }
+
  endforeach;?>
  echo"</ul>";
   endforeach;?>
