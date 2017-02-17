@@ -11,7 +11,8 @@
 li.sub_menu_item  a,.sub_menu_item>a,.top-bar-section .child_one a, li .child_one a,.sub_menu li a{font-size: 0.7rem}
 .homeblock{background-color: #dedede;
 min-height: 150px;
-margin:10px;}
-.homeblock p{font-size: 50px;
+}
+.block{margin:10px;}
+.block p{font-size: 50px;
 margin:0 auto;
 padding:10px;}
