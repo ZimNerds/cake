@@ -6,5 +6,5 @@
 .nav-bar{height:45px;
     position: relative;
     z-index: 100;}
-.menu-item{width:200px}
-li>.child{width:100%}
+.menu-item{width:100px}
+li>.child{width:100px}
