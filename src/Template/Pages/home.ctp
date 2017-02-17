@@ -11,27 +11,27 @@
 <div class="home  large-9 medium-8 columns content">
 <div class="row large-12 medium-12 columns">
 <div class="homeblock large-4 medium-4 ">
-<div class="info block"><p>1 1</p>
+<div class="info block"><p>Properties</p>
 </div>
 </div>
 <div class="homeblock large-4 medium-4 ">
-<div class="info block"><p>1 1</p>
+<div class="info block"><p>Tenants</p>
 </div>
 </div>
 <div class="homeblock large-4 medium-4 ">
-<div class="info block"><p>1 1</p>
+<div class="info block"><p>Applications</p>
 </div>
 </div>
 <div class="homeblock large-4 medium-4 ">
-<div class="info block"><p>1 1</p>
+<div class="info block"><p>Owners</p>
 </div>
 </div>
 <div class="homeblock large-4 medium-4 ">
-<div class="info block"><p>1 1</p>
+<div class="info block"><p>Units</p>
 </div>
 </div>
 <div class="homeblock large-4 medium-4 ">
-<div class="info block"><p>1 1</p>
+<div class="info block"><p>Pages</p>
 </div>
 </div>
 </div>
