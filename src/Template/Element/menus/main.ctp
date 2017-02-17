@@ -9,7 +9,7 @@
    echo "<li class='menu-item'><a href='$link'>$menu->name </a></li>";
 
   echo"<ul class='sub_menu child'>";
-  foreach($mainmenu as $submenu) {
+  foreach($submainmenu as $submenu) {
       $link=  $this->Url->build([
           "controller" => $submenu->controller,
           "action" => $submenu->action

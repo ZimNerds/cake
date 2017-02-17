@@ -75,6 +75,7 @@ class AppController extends Controller
     {
 
         $this->set('mainmenu', $this->_menuInfo());
+        $this->set('submainmenu', $this->_submenuInfo());
 
     }
 
@@ -86,11 +87,17 @@ class AppController extends Controller
             ->find();
 
             return $mainmenu;
+    }
+    function _submenuInfo()
+    {
+        $submainmenu = NULL;
+        $menu = TableRegistry::get('Menus');
+        $submainmenu = $menu
+            ->find()
+            ->where(['parent_menu !=' => 0]);
 
-
-
+        return $submainmenu;
     }
 }
-
 
 
