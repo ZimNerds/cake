@@ -12,13 +12,10 @@ $(document).ready(function(){
     });
 
 
-        $('.menu-item').hover(function(){
-                $('.menu-item').addClass('active');
-            },
-            function(){
-                $('.menu-item').removeClass('active');
-            });
 
 
+    $('.menu-item').hover(
+        function(){ $(this).addClass('active') }
+    )
 
 });
