@@ -17,4 +17,5 @@ li.sub_menu_item  a,.sub_menu_item>a,.top-bar-section .child_one a, li .child_on
     min-height: 150px;}
 .block p{font-size: 50px;
 margin:0 auto;
-padding:10px;}
+padding:10px;
+    text-align:center;}
