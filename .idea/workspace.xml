@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/webroot/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+              <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -815,14 +815,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="32788000" />
-    </task>
-    <task id="LOCAL-00183" summary="add child menu">
-      <created>1487319817528</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1487319817528</updated>
+      <workItem from="1487223018511" duration="32869000" />
     </task>
     <task id="LOCAL-00184" summary="add child menu">
       <created>1487320317267</created>
@@ -1160,11 +1153,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487330843164</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="style sidemenu">
+      <created>1487330925844</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1487330925844</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68377000" />
+    <option name="totallyTimeSpent" value="68458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="191" y="0" width="1375" height="1014" extended-state="0" />
@@ -1660,7 +1660,7 @@
     <entry file="file://$PROJECT_DIR$/webroot/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
           <folding />
         </state>
       </provider>
