@@ -47,8 +47,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webroot/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -815,14 +815,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="24749000" />
-    </task>
-    <task id="LOCAL-00140" summary="add parent menu option dropdown">
-      <created>1487246354822</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1487246354823</updated>
+      <workItem from="1487223018511" duration="24887000" />
     </task>
     <task id="LOCAL-00141" summary="add parent menu option dropdown">
       <created>1487246415682</created>
@@ -1160,11 +1153,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487320796134</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="add child menu">
+      <created>1487320929786</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1487320929786</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60338000" />
+    <option name="totallyTimeSpent" value="60476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="191" y="0" width="1375" height="1014" extended-state="0" />
@@ -1659,8 +1659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
           <folding />
         </state>
       </provider>
