@@ -34,10 +34,13 @@ padding:0;
 margin : 0 auto;}
 .child li{
      list-style: none;}
+.child li a{
+font-size: 1.2rem}
 #actions-sidebar>ul>li{width:100%;
     list-style: none;
 background-color:#308e97;
 border-bottom: 1px solid #dedede}
 #actions-sidebar ul li:hover {background-color: #0078A0;
     border-bottom: 1px solid #f04124;}
-#actions-sidebar ul li a,#actions-sidebar a {color:#fff; padding: 5px;}
+#actions-sidebar ul li a,#actions-sidebar a {color:#fff; padding: 5px;
+font-size: 1.4rem;}
