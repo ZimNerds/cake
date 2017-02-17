@@ -13,13 +13,12 @@ li.sub_menu_item  a,.sub_menu_item>a,.top-bar-section .child_one a, li .child_on
     float: left;
 }
 .block{margin:10px;
-    background-color: #0078A0;
+    background-color: #308e97;
     min-height: 150px;
-box-shadow:#1a1a1a 2px;
-}
+box-shadow:10px 10px 5px 0px rgba(0,0,0,0.75);}
 .block:hover {
     margin: 10px;
-    background-color: #308e97;
+    background-color: #0078A0;
 }
 .block p{font-size: 50px;
 margin:0 auto;
