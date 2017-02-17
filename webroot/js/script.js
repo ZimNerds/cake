@@ -15,7 +15,9 @@ $(document).ready(function(){
 
 
     $('.menu-item').hover(
-        function(){ $(this).addClass('active') }
+        function(){ $(this).addClass('active')},
+        function(){ $(this).removeClass('active') }
+
     )
 
 });
