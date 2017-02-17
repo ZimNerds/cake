@@ -3,4 +3,6 @@
 .menu_item .child{display: none}
 .child{display: none}
 .active>.child{display: block}
-.nav-bar{height:45px}
+.nav-bar{height:45px;
+    position: relative;
+    z-index: 100;}
