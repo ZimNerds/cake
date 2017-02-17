@@ -41,7 +41,7 @@ margin : 0 auto;}
     background-color:#003f54;
     border-bottom: 1px solid #fff;}
 .child li a,li.child_one a{
-font-size: 1rem}
+font-size: 1.2rem !important;}
 #actions-sidebar>ul>li{width:100%;
     list-style: none;
 background-color:#308e97;
