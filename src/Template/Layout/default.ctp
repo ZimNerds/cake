@@ -37,13 +37,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
-        <div class="nav-bar navigation"><ul class="title-area large-3 medium-4 columns">
+        <ul class="title-area large-3 medium-4 columns">
             <li class="name">
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
         </ul>
         <div class="top-bar-section">
-                       <?= $this->element('menus/main') ?>
+                   <div class="nav-bar navigation large-9 medium-8 columns">    <?= $this->element('menus/main') ?>
 
             <ul class="right">
                 <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
