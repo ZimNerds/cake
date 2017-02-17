@@ -24,7 +24,7 @@ echo "<ul class='left'>";
    }
    }
    }
-   echo"</ul>"";
+   echo"</ul>";
  }
  echo"</li>";
   }
