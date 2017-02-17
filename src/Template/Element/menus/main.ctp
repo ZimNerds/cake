@@ -19,7 +19,7 @@ echo "<ul class='left'>";
       ]);
 
       if ($submenu->parent_menu == $menu->id ){
-         echo "<li class='sub_menu-item child'><a href='$link'>$submenu->name </a></li>";
+         echo "<li class='sub_menu_item child_one'><a href='$link'>$submenu->name </a></li>";
 
    }
    }
