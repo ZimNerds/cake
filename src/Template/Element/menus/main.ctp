@@ -19,12 +19,8 @@
       if ($submenu->parent_menu != 0 && $submenu->parent_menu = $menu->id ){
          echo "<li class='menu-item'><a href='$link'>$submenu->name </a></li>";
 
-
-
-
    }
-
-
+   }
  endforeach;?>
  echo"</ul>";
   endforeach;?>
