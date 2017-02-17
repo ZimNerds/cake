@@ -30,7 +30,10 @@ margin:0 auto;
     font-family: 'Josefin Sans', sans-serif;}
 body{font-family: 'Josefin Sans', sans-serif;}
 nav ul{width:100%}
-nav ul li {width:100%;
+nav ul li,nav .menu-item {width:100%;
     list-style: none;
-background-color:#308e97; }
-nav ul li:hover {background-color: #0078A0;}
+background-color:#308e97;
+border-bottom: 1px solid #dedede}
+nav ul li:hover {background-color: #0078A0;
+    border-bottom: 1px solid #f04124;}
+nav ul li a,nav a {color:#fff;}
