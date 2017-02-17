@@ -6,4 +6,4 @@
 .nav-bar{height:45px;
     position: relative;
     z-index: 100;}
-.sub_menu-item .child{display: block;}
+.sub_menu-item .child,li>.child{display: block;}
