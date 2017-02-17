@@ -9,7 +9,7 @@
     </ul>
 </nav>
 <div class="home  large-9 medium-8 columns content">
-<div class="row">
+<div class="row large-12 medium-12 columns">
 <div class="homeblock large-4 medium-4 columns">
 <p>1 1</p>
 </div>
