@@ -1,6 +1,6 @@
 .menu_item.active ul,.active .child{display: block}
 .menu_item ul{display: none}
-.menu_item .child{display: none}
+.ul>.child{display: none}
 .child{display: none}
 .active>.child{display: block}
 .nav-bar{height:45px;
