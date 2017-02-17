@@ -14,12 +14,16 @@ li.sub_menu_item  a,.sub_menu_item>a,.top-bar-section .child_one a, li .child_on
 }
 .block{margin:10px;
     background-color: #0078A0;
-    min-height: 150px;}
+    min-height: 150px;
+box-shadow:#1a1a1a 2px;
+}
 .block:hover {
     margin: 10px;
     background-color: #308e97;
 }
 .block p{font-size: 50px;
 margin:0 auto;
+    color:#fff;
+    font-weight: bold;
 padding:10px;
     text-align:center;}
