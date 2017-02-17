@@ -9,3 +9,9 @@
 .menu-item{width:120px}
 .sub_menu_item{width:120px}
 li.sub_menu_item  a,.sub_menu_item>a,.top-bar-section .child_one a, li .child_one a,.sub_menu li a{font-size: 0.7rem}
+.homeblock{background-color: #dedede;
+    width:100%;
+min-height: 300px;}
+.homeblock p{font-size: 18px;
+margin:0 auto;
+padding:10px;}
