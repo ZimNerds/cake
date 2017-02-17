@@ -29,7 +29,9 @@ margin:0 auto;
     text-align:center;
     font-family: 'Josefin Sans', sans-serif;}
 body{font-family: 'Josefin Sans', sans-serif;}
-#actions-sidebar ul{width:100%}
+#actions-sidebar ul{width:100%;
+padding:0;
+margin : 0 auto;}
 #actions-sidebar>ul>li{width:100%;
     list-style: none;
 background-color:#308e97;
