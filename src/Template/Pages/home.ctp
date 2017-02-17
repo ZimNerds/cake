@@ -4,9 +4,9 @@
   */
 ?>
 <nav class="large-3 medium-4 small-12 columns" id="actions-sidebar">
-    <ul class="side-nav">
 
-    </ul>
+<?= $this->element('menus/main') ?>
+
 </nav>
 <div class="home  large-9 medium-8 small-12 columns content">
 <div class="row large-12 medium-12 columns">
