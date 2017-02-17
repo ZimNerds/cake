@@ -33,7 +33,8 @@ body{font-family: 'Josefin Sans', sans-serif;}
 padding:0;
 margin : 0 auto;}
 .child li{
-     list-style: none;}
+     list-style: none;
+    width:100%;}
 .child li a{
 font-size: 1.1rem}
 #actions-sidebar>ul>li{width:100%;
