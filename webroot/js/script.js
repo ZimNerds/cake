@@ -11,4 +11,14 @@ $(document).ready(function(){
         });
     });
 
+
+        $('.menu-item').hover(function(){
+                $('.menu-item').addClass('active');
+            },
+            function(){
+                $('.menu-item').removeClass('active');
+            });
+
+
+
 });
