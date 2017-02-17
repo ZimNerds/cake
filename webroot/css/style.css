@@ -8,4 +8,4 @@
     z-index: 100;}
 .menu-item{width:120px}
 .sub_menu_item{width:120px}
-.sub_menu_item li a,.sub_menu_item>a{font-size: 0.7rem}
+.top-bar-section .sub_menu_item li a,.sub_menu_item>a,.top-bar-section .child_one a{font-size: 0.7rem}
