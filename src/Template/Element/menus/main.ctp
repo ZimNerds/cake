@@ -1,5 +1,5 @@
 <?php
-echo "<ul class='left'>";"
+echo "<ul class='left'>";
     foreach($mainmenu as $menu) {
     $link=  $this->Url->build([
         "controller" => $menu->controller,
