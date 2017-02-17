@@ -1,5 +1,5 @@
 .menu_item.active ul,.active .child{display: block}
 .menu_item ul{display: none}
 .menu_item .child{display: none}
-.nav-bar.child{display: none}
-.nav-bar.active ul,.nav-bar.active .child{display: block}
+.child{display: none}
+.active>.child{display: block}
