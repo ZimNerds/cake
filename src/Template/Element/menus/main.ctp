@@ -11,8 +11,8 @@
   echo"<ul class='sub_menu child'>";
   foreach($mainmenu as $submenu) {
       $link=  $this->Url->build([
-          "controller" => $menu->controller,
-          "action" => $menu->action
+          "controller" => $submenu->controller,
+          "action" => $submenu->action
 
       ]);
 
