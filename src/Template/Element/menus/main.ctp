@@ -6,7 +6,7 @@
 
     ]);
     if ($menu->parent_menu == 0){
-   echo "<li class='menu-item'><a href='$link'>$menu->name </a></li>";
+   echo "<li class='menu-item'><a href='$link'>$menu->name </a>";
 
   echo"<ul class='sub_menu child'>";
   foreach($submainmenu as $submenu) {
@@ -24,5 +24,5 @@
    }
    }
  }
- echo"</ul>";
+ echo"</ul></li>";
   }?>
