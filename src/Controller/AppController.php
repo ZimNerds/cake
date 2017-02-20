@@ -49,15 +49,18 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
-            'loginRedirect' => [
-                'controller' => 'Properties',
-                'action' => 'index'
+            'loginAction' => [
+                'controller' => 'Users',
+                'action' => 'login',
+                'plugin' => 'Users'
             ],
-            'logoutRedirect' => [
-                'controller' => 'Pages',
-                'action' => 'index',
-                'home'
-            ]
+            'authError' => 'Did you really think you are allowed to see that? ',
+            'authenticate' => [
+                'Form' => [
+                    'fields' => ['username' => 'email', 'password' => 'passwd']
+                ]
+            ],
+            'storage' => 'Session'
         ]);
 
         /*
