@@ -53,6 +53,10 @@ class AppController extends Controller
                 'controller' => 'Properties',
                 'action' => 'index'
             ],
+            'logoutRedirect' => [
+                'controller' => 'Pages',
+                'action' => 'index'
+            ],
             'authError' => 'Did you really think you are allowed to see that? ',
             'authenticate' => [
                 'Form' => [
