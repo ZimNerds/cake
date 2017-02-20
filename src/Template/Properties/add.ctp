@@ -11,6 +11,8 @@
         <li><?= $this->Html->link(__('New Type'), ['controller' => 'Types', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Owners'), ['controller' => 'Owners', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Owner'), ['controller' => 'Owners', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Countries'), ['controller' => 'Countries', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Country'), ['controller' => 'Countries', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Cities'), ['controller' => 'Cities', 'action' => 'index']) ?></li>
@@ -24,29 +26,27 @@
     </ul>
 </nav>
 <div class="properties form large-9 medium-8 columns content">
-    <?= $this->Form->create($property,['type' => 'file']) ?>
+    <?= $this->Form->create($property) ?>
     <fieldset>
         <legend><?= __('Add Property') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('type_id', ['options' => $types]);
             echo $this->Form->input('number_of_units');
-            echo $this->Form->input('photo',['type' => 'file']);
+            echo $this->Form->input('photo');
+            echo $this->Form->input('photo_dir');
             echo $this->Form->input('owner_id', ['options' => $owners, 'empty' => true]);
+            echo $this->Form->input('user_id', ['options' => $users]);
             echo $this->Form->input('operating_account');
             echo $this->Form->input('property_reserve');
             echo $this->Form->input('lease_term');
-            echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true, 'class'=>'country']);
+            echo $this->Form->input('country_id', ['options' => $countries, 'empty' => true]);
             echo $this->Form->input('address');
-            ?>
-            <div id="state">
-            </div>
-               <div id="city">
-               </div>
-<?php
-            echo $this->Form->input('zip');?>
+            echo $this->Form->input('city_id', ['options' => $cities, 'empty' => true]);
+            echo $this->Form->input('state_id', ['options' => $states, 'empty' => true]);
+            echo $this->Form->input('zip');
+        ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
 </div>
-

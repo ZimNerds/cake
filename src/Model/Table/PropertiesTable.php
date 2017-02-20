@@ -11,6 +11,7 @@ use Cake\Validation\Validator;
  *
  * @property \Cake\ORM\Association\BelongsTo $Types
  * @property \Cake\ORM\Association\BelongsTo $Owners
+ * @property \Cake\ORM\Association\BelongsTo $Users
  * @property \Cake\ORM\Association\BelongsTo $Countries
  * @property \Cake\ORM\Association\BelongsTo $Cities
  * @property \Cake\ORM\Association\BelongsTo $States
@@ -37,29 +38,7 @@ class PropertiesTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-        $this->addBehavior('Proffer.Proffer', [
-            'photo' => [    // The name of your upload field
-                'root' => WWW_ROOT . 'uploads', // Customise the root upload folder here, or omit to use the default
-                'dir' => 'photo_dir',   // The name of the field to store the folder
-                'thumbnailSizes' => [ // Declare your thumbnails
-                    'square' => [   // Define the prefix of your thumbnail
-                        'w' => 200, // Width
-                        'h' => 200, // Height
-                        'jpeg_quality'  => 100
-                    ],
-                    'wide' => [   // Define the prefix of your thumbnail
-                        'w' => 600, // Width
-                        'h' => 240, // Height
-                        'jpeg_quality'  => 100
-                    ],
-                    'portrait' => [     // Define a second thumbnail
-                        'w' => 100,
-                        'h' => 300
-                    ],
-                ],
-                'thumbnailMethod' => 'gd'   // Options are Imagick or Gd
-            ]
-        ]);
+
         $this->table('properties');
         $this->displayField('name');
         $this->primaryKey('id');
@@ -70,6 +49,10 @@ class PropertiesTable extends Table
         ]);
         $this->belongsTo('Owners', [
             'foreignKey' => 'owner_id'
+        ]);
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER'
         ]);
         $this->belongsTo('Countries', [
             'foreignKey' => 'country_id'
@@ -145,6 +128,7 @@ class PropertiesTable extends Table
     {
         $rules->add($rules->existsIn(['type_id'], 'Types'));
         $rules->add($rules->existsIn(['owner_id'], 'Owners'));
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
         $rules->add($rules->existsIn(['country_id'], 'Countries'));
         $rules->add($rules->existsIn(['city_id'], 'Cities'));
         $rules->add($rules->existsIn(['state_id'], 'States'));

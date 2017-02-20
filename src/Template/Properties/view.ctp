@@ -14,6 +14,8 @@
         <li><?= $this->Html->link(__('New Type'), ['controller' => 'Types', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Owners'), ['controller' => 'Owners', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Owner'), ['controller' => 'Owners', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Countries'), ['controller' => 'Countries', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Country'), ['controller' => 'Countries', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Cities'), ['controller' => 'Cities', 'action' => 'index']) ?> </li>
@@ -28,11 +30,6 @@
 </nav>
 <div class="properties view large-9 medium-8 columns content">
     <h3><?= h($property->name) ?></h3>
-    <div class="row">
-    <div class="properties view large-4 medium-6 columns ">
-    <?= $this->Html->image('/uploads/properties/photo/'.$property->photo_dir.'/'.$property->photo) ?>
-    </div>
-    <div class="properties view large-8 medium-6 columns ">
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Name') ?></th>
@@ -43,8 +40,20 @@
             <td><?= $property->has('type') ? $this->Html->link($property->type->name, ['controller' => 'Types', 'action' => 'view', $property->type->id]) : '' ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Photo') ?></th>
+            <td><?= h($property->photo) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Photo Dir') ?></th>
+            <td><?= h($property->photo_dir) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Owner') ?></th>
             <td><?= $property->has('owner') ? $this->Html->link($property->owner->name, ['controller' => 'Owners', 'action' => 'view', $property->owner->id]) : '' ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('User') ?></th>
+            <td><?= $property->has('user') ? $this->Html->link($property->user->id, ['controller' => 'Users', 'action' => 'view', $property->user->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Operating Account') ?></th>
@@ -83,8 +92,6 @@
             <td><?= $this->Number->format($property->zip) ?></td>
         </tr>
     </table>
-    </div>
-    </div>
     <div class="row">
         <h4><?= __('Address') ?></h4>
         <?= $this->Text->autoParagraph(h($property->address)); ?>
