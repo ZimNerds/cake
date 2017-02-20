@@ -29,6 +29,7 @@ use Cake\ORM\TableRegistry;
 class AppController extends Controller
 {
 
+
     /**
      * Initialization hook method.
      *
@@ -47,6 +48,17 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+            'loginRedirect' => [
+                'controller' => 'Properties',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Pages',
+                'action' => 'index',
+                'home'
+            ]
+        ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -76,6 +88,7 @@ class AppController extends Controller
 
         $this->set('mainmenu', $this->_menuInfo());
         $this->set('submainmenu', $this->_submenuInfo());
+        $this->Auth->allow(['index', 'view', 'display']);
 
     }
 

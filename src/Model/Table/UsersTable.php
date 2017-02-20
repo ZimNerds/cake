@@ -25,6 +25,7 @@ use Cake\Validation\Validator;
 class UsersTable extends Table
 {
 
+
     /**
      * Initialize method
      *
@@ -58,21 +59,17 @@ class UsersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')
-            ->allowEmpty('id', 'create');
+            ->notEmpty('name', 'A username is required');
 
         $validator
-            ->allowEmpty('name');
+            ->allowEmpty('fullname', 'Full is required');
 
         $validator
-            ->allowEmpty('fullname');
-
-        $validator
-            ->allowEmpty('password');
+            ->notEmpty('password', 'A password is required');
 
         $validator
             ->email('email')
-            ->allowEmpty('email');
+            ->notEmpty('email', 'An password is required');
 
         $validator
             ->integer('isBanned')

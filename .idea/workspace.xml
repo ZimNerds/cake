@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b82fa95-ae44-45d6-bbbc-b2c3625cfcd5" name="Default" comment="fix inside menu">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Entity/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Users/add.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Users/edit.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Users/index.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Users/view.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Fixture/UsersFixture.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Fixture/UsersRecordsFixture.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Controller/UsersRecordsControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/UsersRecordsTableTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php" afterPath="" />
+    <list default="true" id="2b82fa95-ae44-45d6-bbbc-b2c3625cfcd5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/Users/login.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/AppController.php" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" afterPath="$PROJECT_DIR$/src/Controller/UsersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Entity/User.php" afterPath="$PROJECT_DIR$/src/Model/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" afterPath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" />
     </list>
     <ignored path="cake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,31 +28,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webroot/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.ctp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Properties/add.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="525">
               <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersTable.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Table/UsersTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-525">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+              <folding>
+                <element signature="e#33#66#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+              <folding>
+                <element signature="e#35#55#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.ctp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/Users/login.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -78,8 +95,8 @@
       <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
               <folding>
                 <element signature="e#602#633#0#PHP" expanded="true" />
               </folding>
@@ -117,16 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Properties/index.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -157,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/Template/Owners/index.ctp" />
         <option value="$PROJECT_DIR$/webroot/css/cake.css" />
         <option value="$PROJECT_DIR$/config/bootstrap.php" />
-        <option value="$PROJECT_DIR$/src/Model/Table/UsersTable.php" />
         <option value="$PROJECT_DIR$/src/Template/Properties/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Units/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Units/edit.ctp" />
@@ -176,12 +182,16 @@
         <option value="$PROJECT_DIR$/src/Template/Properties/index.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/MenusController.php" />
         <option value="$PROJECT_DIR$/src/Template/Menus/add.ctp" />
-        <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
         <option value="$PROJECT_DIR$/webroot/js/script.js" />
         <option value="$PROJECT_DIR$/src/Template/Element/menus/main.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Layout/default.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Pages/home.ctp" />
         <option value="$PROJECT_DIR$/webroot/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Model/Table/UsersTable.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/UsersController.php" />
+        <option value="$PROJECT_DIR$/src/Model/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Template/Users/login.ctp" />
       </list>
     </option>
   </component>
@@ -472,6 +482,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cake" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Users" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -804,7 +836,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/webroot/error_log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -820,10 +852,6 @@
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Users/index.ctp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Users/view.ctp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/Fixture/UsersFixture.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/Fixture/UsersRecordsFixture.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Controller/UsersRecordsControllerTest.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Model/Table/UsersRecordsTableTest.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -971,14 +999,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="37848000" />
-    </task>
-    <task id="LOCAL-00200" summary="Drop down Menu">
-      <created>1487323073558</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1487323073558</updated>
+      <workItem from="1487223018511" duration="39114000" />
     </task>
     <task id="LOCAL-00201" summary="Drop down Menu">
       <created>1487325501098</created>
@@ -1316,18 +1337,25 @@
       <option name="project" value="LOCAL" />
       <updated>1487593912878</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="fix inside menu">
+      <created>1487594343197</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1487594343197</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73437000" />
+    <option name="totallyTimeSpent" value="74703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="191" y="0" width="1375" height="1014" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26909092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26909092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1414,27 +1442,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Template/Properties/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Owners/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="66" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Users/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1514,14 +1521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2970">
           <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/UsersTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1748,16 +1747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
-          <folding>
-            <element signature="e#602#633#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webroot/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1808,7 +1797,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state relative-caret-position="525">
           <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
           <folding />
         </state>
@@ -1818,6 +1807,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="32" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/UsersTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+          <folding>
+            <element signature="e#602#633#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+          <folding>
+            <element signature="e#33#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+          <folding>
+            <element signature="e#35#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Users/login.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding />
         </state>
       </provider>
