@@ -19,7 +19,7 @@ class PropertiesController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Types', 'Owners', 'Countries', 'Cities', 'States']
+            'contain' => ['Types', 'Owners', 'Users', 'Countries', 'Cities', 'States']
         ];
         $properties = $this->paginate($this->Properties);
 
@@ -37,7 +37,7 @@ class PropertiesController extends AppController
     public function view($id = null)
     {
         $property = $this->Properties->get($id, [
-            'contain' => ['Types', 'Owners', 'Countries', 'Cities', 'States', 'Applications', 'Units']
+            'contain' => ['Types', 'Owners', 'Users', 'Countries', 'Cities', 'States', 'Applications', 'Units']
         ]);
 
         $this->set('property', $property);
@@ -63,10 +63,11 @@ class PropertiesController extends AppController
         }
         $types = $this->Properties->Types->find('list', ['limit' => 200]);
         $owners = $this->Properties->Owners->find('list', ['limit' => 200]);
+        $users = $this->Properties->Users->find('list', ['limit' => 200]);
         $countries = $this->Properties->Countries->find('list', ['limit' => 200]);
         $cities = $this->Properties->Cities->find('list', ['limit' => 200]);
         $states = $this->Properties->States->find('list', ['limit' => 200]);
-        $this->set(compact('property', 'types', 'owners', 'countries', 'cities', 'states'));
+        $this->set(compact('property', 'types', 'owners', 'users', 'countries', 'cities', 'states'));
         $this->set('_serialize', ['property']);
     }
 
@@ -93,10 +94,11 @@ class PropertiesController extends AppController
         }
         $types = $this->Properties->Types->find('list', ['limit' => 200]);
         $owners = $this->Properties->Owners->find('list', ['limit' => 200]);
+        $users = $this->Properties->Users->find('list', ['limit' => 200]);
         $countries = $this->Properties->Countries->find('list', ['limit' => 200]);
         $cities = $this->Properties->Cities->find('list', ['limit' => 200]);
         $states = $this->Properties->States->find('list', ['limit' => 200]);
-        $this->set(compact('property', 'types', 'owners', 'countries', 'cities', 'states'));
+        $this->set(compact('property', 'types', 'owners', 'users', 'countries', 'cities', 'states'));
         $this->set('_serialize', ['property']);
     }
 

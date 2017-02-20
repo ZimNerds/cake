@@ -10,7 +10,7 @@ use Cake\ORM\Entity;
  * @property string $name
  * @property int $type_id
  * @property float $number_of_units
- * @property $photo
+ * @property string $photo
  * @property string $photo_dir
  * @property int $owner_id
  * @property int $user_id
@@ -25,6 +25,7 @@ use Cake\ORM\Entity;
  *
  * @property \App\Model\Entity\Type $type
  * @property \App\Model\Entity\Owner $owner
+ * @property \App\Model\Entity\User $user
  * @property \App\Model\Entity\Country $country
  * @property \App\Model\Entity\City $city
  * @property \App\Model\Entity\State $state

@@ -14,6 +14,8 @@
         <li><?= $this->Html->link(__('New Type'), ['controller' => 'Types', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Owners'), ['controller' => 'Owners', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Owner'), ['controller' => 'Owners', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Countries'), ['controller' => 'Countries', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Country'), ['controller' => 'Countries', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Cities'), ['controller' => 'Cities', 'action' => 'index']) ?> </li>
@@ -50,6 +52,10 @@
             <td><?= $property->has('owner') ? $this->Html->link($property->owner->name, ['controller' => 'Owners', 'action' => 'view', $property->owner->id]) : '' ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('User') ?></th>
+            <td><?= $property->has('user') ? $this->Html->link($property->user->id, ['controller' => 'Users', 'action' => 'view', $property->user->id]) : '' ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Operating Account') ?></th>
             <td><?= h($property->operating_account) ?></td>
         </tr>
@@ -76,10 +82,6 @@
         <tr>
             <th scope="row"><?= __('Number Of Units') ?></th>
             <td><?= $this->Number->format($property->number_of_units) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('User Id') ?></th>
-            <td><?= $this->Number->format($property->user_id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Property Reserve') ?></th>

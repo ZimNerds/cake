@@ -35,7 +35,12 @@ class PropertiesTableTest extends TestCase
         'app.units',
         'app.employment',
         'app.rental_history',
-        'app.references'
+        'app.references',
+        'app.users',
+        'app.groups',
+        'app.users_records',
+        'app.permissions',
+        'app.groups_permissions'
     ];
 
     /**
