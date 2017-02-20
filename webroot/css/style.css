@@ -40,9 +40,9 @@ margin : 0 auto;}
 .child li:hover{
     background-color:#003f54;
     border-bottom: 1px solid #fff;}
-#actions-sidebar.child li a,#actions-sidebar li.child_one a{
+.homepage.child li a,.homepage li.child_one a{
 font-size: 1.2rem !important;}
-#actions-sidebar>ul>li{
+.homepage>ul>li{
     width:100%;
     list-style: none;
 background-color:#308e97;
@@ -58,7 +58,7 @@ border-bottom: 1px solid #dedede}
     background-color:#dedede !important;
 }
 
-#actions-sidebar ul li a, #actions-sidebar a {
+.homepage ul li a, .homepage a {
     color: #fff;
     padding: 5px;
     font-size: 1.4rem;
