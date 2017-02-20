@@ -63,7 +63,6 @@ class AppController extends Controller
                     'fields' => ['username' => 'email', 'password' => 'passwd']
                 ]
             ],
-            'storage' => 'Session'
         ]);
 
         /*
