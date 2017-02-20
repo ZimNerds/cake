@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b82fa95-ae44-45d6-bbbc-b2c3625cfcd5" name="Default" comment="">
+    <list default="true" id="2b82fa95-ae44-45d6-bbbc-b2c3625cfcd5" name="Default" comment="fix inside menu">
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/UsersRecordsController.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Entity/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Entity/UsersRecord.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Table/UsersRecordsTable.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Users/add.ctp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Users/edit.ctp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Users/index.ctp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Users/view.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/UsersRecords/add.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/UsersRecords/edit.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/UsersRecords/index.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/UsersRecords/view.ctp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Fixture/UsersFixture.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Fixture/UsersRecordsFixture.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Controller/UsersRecordsControllerTest.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/UsersRecordsTableTest.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php" afterPath="" />
@@ -812,15 +804,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/MenusController.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Model/Entity/Menu.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Model/Table/MenusTable.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Menus/add.ctp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Menus/edit.ctp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Menus/index.ctp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Menus/view.ctp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/Fixture/MenusFixture.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Model/Table/MenusTableTest.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/webroot/error_log</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -828,6 +812,19 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/UsersController.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Model/Entity/User.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Model/Table/UsersTable.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Users/add.ctp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Users/edit.ctp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Users/index.ctp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Template/Users/view.ctp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/Fixture/UsersFixture.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/Fixture/UsersRecordsFixture.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Controller/UsersRecordsControllerTest.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Model/Table/UsersRecordsTableTest.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -974,14 +971,7 @@
       <workItem from="1486975571329" duration="899000" />
       <workItem from="1486976500048" duration="3585000" />
       <workItem from="1486986487438" duration="26689000" />
-      <workItem from="1487223018511" duration="37422000" />
-    </task>
-    <task id="LOCAL-00199" summary="Drop down Menu">
-      <created>1487322587794</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1487322587794</updated>
+      <workItem from="1487223018511" duration="37848000" />
     </task>
     <task id="LOCAL-00200" summary="Drop down Menu">
       <created>1487323073558</created>
@@ -1319,11 +1309,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487593212923</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="fix inside menu">
+      <created>1487593912878</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1487593912878</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73011000" />
+    <option name="totallyTimeSpent" value="73437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="191" y="0" width="1375" height="1014" extended-state="0" />
