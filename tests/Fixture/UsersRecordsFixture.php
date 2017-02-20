@@ -48,8 +48,8 @@ class UsersRecordsFixture extends TestFixture
             'id' => 1,
             'tableName' => 'Lorem ipsum dolor sit amet',
             'user_id' => 1,
-            'created' => '2017-02-13 06:29:36',
-            'modified' => '2017-02-13 06:29:36',
+            'created' => '2017-02-20 12:24:33',
+            'modified' => '2017-02-20 12:24:33',
             'group_id' => 1
         ],
     ];

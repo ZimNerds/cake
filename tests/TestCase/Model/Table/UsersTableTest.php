@@ -28,7 +28,6 @@ class UsersTableTest extends TestCase
         'app.groups',
         'app.users_records',
         'app.permissions',
-        'app.members',
         'app.groups_permissions',
         'app.records'
     ];

@@ -20,7 +20,6 @@ class UsersRecordsControllerTest extends IntegrationTestCase
         'app.users',
         'app.groups',
         'app.permissions',
-        'app.members',
         'app.groups_permissions',
         'app.records'
     ];

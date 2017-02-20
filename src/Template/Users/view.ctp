@@ -12,6 +12,8 @@
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Groups'), ['controller' => 'Groups', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Group'), ['controller' => 'Groups', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Permissions'), ['controller' => 'Permissions', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Permission'), ['controller' => 'Permissions', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Records'), ['controller' => 'Records', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Record'), ['controller' => 'Records', 'action' => 'add']) ?> </li>
     </ul>
@@ -79,6 +81,41 @@
     <div class="row">
         <h4><?= __('Comments') ?></h4>
         <?= $this->Text->autoParagraph(h($user->comments)); ?>
+    </div>
+    <div class="related">
+        <h4><?= __('Related Permissions') ?></h4>
+        <?php if (!empty($user->permissions)): ?>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th scope="col"><?= __('Id') ?></th>
+                <th scope="col"><?= __('User Id') ?></th>
+                <th scope="col"><?= __('TableName') ?></th>
+                <th scope="col"><?= __('AllowInsert') ?></th>
+                <th scope="col"><?= __('AllowView') ?></th>
+                <th scope="col"><?= __('AllowEdit') ?></th>
+                <th scope="col"><?= __('AllowDelete') ?></th>
+                <th scope="col"><?= __('Permission Id') ?></th>
+                <th scope="col" class="actions"><?= __('Actions') ?></th>
+            </tr>
+            <?php foreach ($user->permissions as $permissions): ?>
+            <tr>
+                <td><?= h($permissions->id) ?></td>
+                <td><?= h($permissions->user_id) ?></td>
+                <td><?= h($permissions->tableName) ?></td>
+                <td><?= h($permissions->allowInsert) ?></td>
+                <td><?= h($permissions->allowView) ?></td>
+                <td><?= h($permissions->allowEdit) ?></td>
+                <td><?= h($permissions->allowDelete) ?></td>
+                <td><?= h($permissions->permission_id) ?></td>
+                <td class="actions">
+                    <?= $this->Html->link(__('View'), ['controller' => 'Permissions', 'action' => 'view', $permissions->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['controller' => 'Permissions', 'action' => 'edit', $permissions->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Permissions', 'action' => 'delete', $permissions->id], ['confirm' => __('Are you sure you want to delete # {0}?', $permissions->id)]) ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+        <?php endif; ?>
     </div>
     <div class="related">
         <h4><?= __('Related Records') ?></h4>

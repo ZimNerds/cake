@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Users Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Groups
+ * @property \Cake\ORM\Association\HasMany $Permissions
  * @property \Cake\ORM\Association\BelongsToMany $Records
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
@@ -35,7 +36,6 @@ class UsersTable extends Table
     {
         parent::initialize($config);
 
-
         $this->table('users');
         $this->displayField('id');
         $this->primaryKey('id');
@@ -44,6 +44,9 @@ class UsersTable extends Table
 
         $this->belongsTo('Groups', [
             'foreignKey' => 'group_id'
+        ]);
+        $this->hasMany('Permissions', [
+            'foreignKey' => 'user_id'
         ]);
         $this->belongsToMany('Records', [
             'foreignKey' => 'user_id',

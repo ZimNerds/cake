@@ -2,3 +2,13 @@
 [13-Feb-2017 13:35:05 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/zimnerds/public_html/cake/src/Template/Properties/add.ctp on line 41
 [14-Feb-2017 07:00:28 UTC] PHP Parse error:  syntax error, unexpected 'states' (T_STRING), expecting ',' or ';' in /home/zimnerds/public_html/cake/src/Template/Properties/add.ctp on line 41
 [14-Feb-2017 10:34:17 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/zimnerds/public_html/cake/src/Template/Properties/add.ctp on line 46
+[16-Feb-2017 11:24:33 UTC] PHP Fatal error:  Class 'TableRegistry' not found in /home/zimnerds/public_html/cake/src/Template/Element/menus/main.ctp on line 2
+[16-Feb-2017 11:28:46 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/zimnerds/public_html/cake/src/Template/Element/menus/main.ctp on line 13
+[16-Feb-2017 11:29:58 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/zimnerds/public_html/cake/src/Template/Element/menus/main.ctp on line 13
+[16-Feb-2017 12:15:12 UTC] PHP Fatal error:  Call to a member function allow() on boolean in /home/zimnerds/public_html/cake/src/Controller/AppController.php on line 76
+[16-Feb-2017 12:41:20 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/zimnerds/public_html/cake/src/Template/Properties/index.ctp on line 50
+[17-Feb-2017 07:35:53 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/zimnerds/public_html/cake/src/Template/Element/menus/main.ctp on line 31
+[17-Feb-2017 07:37:29 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/zimnerds/public_html/cake/src/Template/Element/menus/main.ctp on line 23
+[17-Feb-2017 07:38:54 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/zimnerds/public_html/cake/src/Template/Element/menus/main.ctp on line 27
+[17-Feb-2017 08:11:06 UTC] PHP Parse error:  syntax error, unexpected 'controller' (T_STRING) in /home/zimnerds/public_html/cake/src/Template/Element/menus/main.ctp on line 5
+[17-Feb-2017 08:14:54 UTC] PHP Parse error:  syntax error, unexpected '";' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/zimnerds/public_html/cake/src/Template/Element/menus/main.ctp on line 29

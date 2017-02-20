@@ -23,6 +23,7 @@ use Cake\ORM\Entity;
  * @property int $pass_reset_expiry
  *
  * @property \App\Model\Entity\Group $group
+ * @property \App\Model\Entity\Permission[] $permissions
  * @property \App\Model\Entity\Record[] $records
  */
 class User extends Entity
