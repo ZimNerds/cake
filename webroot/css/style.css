@@ -42,10 +42,23 @@ margin : 0 auto;}
     border-bottom: 1px solid #fff;}
 #actions-sidebar.child li a,#actions-sidebar li.child_one a{
 font-size: 1.2rem !important;}
-#actions-sidebar>ul>li{width:100%;
+#actions-sidebar>ul>li{
+    width:100%;
     list-style: none;
 background-color:#308e97;
 border-bottom: 1px solid #dedede}
+
+.side-nav{
+    color: #008CBA !important;
+    font-size: 0.875rem !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    font-weight: normal !important;
+    margin: 0 0 0.4375rem 0 !important;
+    background-color:#dedede !important;
+}
+
+
 #actions-sidebar ul li:hover {background-color: #0078A0;
     border-bottom: 1px solid #f04124;}
 #actions-sidebar ul li a,#actions-sidebar a {color:#fff; padding: 5px;
