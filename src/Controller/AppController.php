@@ -50,9 +50,8 @@ class AppController extends Controller
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
             'loginAction' => [
-                'controller' => 'Users',
-                'action' => 'login',
-                'plugin' => 'Users'
+                'controller' => 'Properties',
+                'action' => 'index'
             ],
             'authError' => 'Did you really think you are allowed to see that? ',
             'authenticate' => [
