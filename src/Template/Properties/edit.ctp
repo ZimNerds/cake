@@ -30,15 +30,17 @@
     </ul>
 </nav>
 <div class="properties form large-9 medium-8 columns content">
-    <?= $this->Form->create($property,['type' => 'file']) ?>
+    <?= $this->Form->create($property) ?>
     <fieldset>
         <legend><?= __('Edit Property') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('type_id', ['options' => $types]);
             echo $this->Form->input('number_of_units');
-            echo $this->Form->input('photo',['type' => 'file']);
+            echo $this->Form->input('photo');
+            echo $this->Form->input('photo_dir');
             echo $this->Form->input('owner_id', ['options' => $owners, 'empty' => true]);
+            echo $this->Form->input('user_id');
             echo $this->Form->input('operating_account');
             echo $this->Form->input('property_reserve');
             echo $this->Form->input('lease_term');

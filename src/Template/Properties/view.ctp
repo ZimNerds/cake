@@ -28,11 +28,6 @@
 </nav>
 <div class="properties view large-9 medium-8 columns content">
     <h3><?= h($property->name) ?></h3>
-    <div class="row">
-    <div class="properties view large-4 medium-6 columns ">
-    <?= $this->Html->image('/uploads/properties/photo/'.$property->photo_dir.'/'.$property->photo) ?>
-    </div>
-    <div class="properties view large-8 medium-6 columns ">
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Name') ?></th>
@@ -41,6 +36,14 @@
         <tr>
             <th scope="row"><?= __('Type') ?></th>
             <td><?= $property->has('type') ? $this->Html->link($property->type->name, ['controller' => 'Types', 'action' => 'view', $property->type->id]) : '' ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Photo') ?></th>
+            <td><?= h($property->photo) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Photo Dir') ?></th>
+            <td><?= h($property->photo_dir) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Owner') ?></th>
@@ -75,6 +78,10 @@
             <td><?= $this->Number->format($property->number_of_units) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('User Id') ?></th>
+            <td><?= $this->Number->format($property->user_id) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Property Reserve') ?></th>
             <td><?= $this->Number->format($property->property_reserve) ?></td>
         </tr>
@@ -83,8 +90,6 @@
             <td><?= $this->Number->format($property->zip) ?></td>
         </tr>
     </table>
-    </div>
-    </div>
     <div class="row">
         <h4><?= __('Address') ?></h4>
         <?= $this->Text->autoParagraph(h($property->address)); ?>

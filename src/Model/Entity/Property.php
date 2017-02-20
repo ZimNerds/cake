@@ -10,9 +10,10 @@ use Cake\ORM\Entity;
  * @property string $name
  * @property int $type_id
  * @property float $number_of_units
- * @property string $photo
+ * @property $photo
  * @property string $photo_dir
  * @property int $owner_id
+ * @property int $user_id
  * @property string $operating_account
  * @property float $property_reserve
  * @property string $lease_term
