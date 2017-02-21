@@ -94,7 +94,6 @@ class AppController extends Controller
         $this->set('mainmenu', $this->_menuInfo());
         $this->set('submainmenu', $this->_submenuInfo());
         $this->Auth->allow(['add','index', 'view', 'display']);
-
     }
 
     function _menuInfo()
