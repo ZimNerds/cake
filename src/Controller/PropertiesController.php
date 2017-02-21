@@ -55,6 +55,7 @@ class PropertiesController extends AppController
         $property = $this->Properties->newEntity();
         if ($this->request->is('post')) {
             $property = $this->Properties->patchEntity($property, $this->request->data);
+            $property->user_id = $this->Auth->user('id');
             if ($this->Properties->save($property)) {
                 $this->Flash->success(__('The property has been saved.'));
 
