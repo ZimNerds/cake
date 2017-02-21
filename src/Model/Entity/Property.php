@@ -13,7 +13,6 @@ use Cake\ORM\Entity;
  * @property string $photo
  * @property string $photo_dir
  * @property int $owner_id
- * @property int $user_id
  * @property string $operating_account
  * @property float $property_reserve
  * @property string $lease_term
@@ -25,7 +24,6 @@ use Cake\ORM\Entity;
  *
  * @property \App\Model\Entity\Type $type
  * @property \App\Model\Entity\Owner $owner
- * @property \App\Model\Entity\User $user
  * @property \App\Model\Entity\Country $country
  * @property \App\Model\Entity\City $city
  * @property \App\Model\Entity\State $state

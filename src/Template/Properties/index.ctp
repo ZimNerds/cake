@@ -11,8 +11,6 @@
         <li><?= $this->Html->link(__('New Type'), ['controller' => 'Types', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Owners'), ['controller' => 'Owners', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Owner'), ['controller' => 'Owners', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Countries'), ['controller' => 'Countries', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Country'), ['controller' => 'Countries', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Cities'), ['controller' => 'Cities', 'action' => 'index']) ?></li>
@@ -35,9 +33,7 @@
                 <th scope="col"><?= $this->Paginator->sort('type_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('number_of_units') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('photo') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('photo_dir') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('owner_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('operating_account') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('property_reserve') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('lease_term') ?></th>
@@ -49,16 +45,14 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($properties as $property): ?>
+            <?php foreach ($properties as $property):?>
             <tr>
                 <td><?= $this->Number->format($property->id) ?></td>
                 <td><?= h($property->name) ?></td>
                 <td><?= $property->has('type') ? $this->Html->link($property->type->name, ['controller' => 'Types', 'action' => 'view', $property->type->id]) : '' ?></td>
                 <td><?= $this->Number->format($property->number_of_units) ?></td>
-                <td><?= h($property->photo) ?></td>
-                <td><?= h($property->photo_dir) ?></td>
+                <td><?= $this->Html->image('/uploads/properties/photo/'.$property->photo_dir.'/square_'.$property->photo) ?></td>
                 <td><?= $property->has('owner') ? $this->Html->link($property->owner->name, ['controller' => 'Owners', 'action' => 'view', $property->owner->id]) : '' ?></td>
-                <td><?= $property->has('user') ? $this->Html->link($property->user->id, ['controller' => 'Users', 'action' => 'view', $property->user->id]) : '' ?></td>
                 <td><?= h($property->operating_account) ?></td>
                 <td><?= $this->Number->format($property->property_reserve) ?></td>
                 <td><?= h($property->lease_term) ?></td>
@@ -83,6 +77,7 @@
             <?= $this->Paginator->next(__('next') . ' >') ?>
             <?= $this->Paginator->last(__('last') . ' >>') ?>
         </ul>
+
         <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
     </div>
 </div>
